@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1s8ga0pjq5yp"
-path="res://.godot/imported/green chill zone - 8x8 AUTUMN.png-353df46b0425c6271e6a76852ffcdcb3.ctex"
+path="res://.godot/imported/green chill zone - 8x8 AUTUMN.png-1786bd80feeae7f6b7e82663f7295515.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tiles/green chill zone - 8x8 AUTUMN.png"
-dest_files=["res://.godot/imported/green chill zone - 8x8 AUTUMN.png-353df46b0425c6271e6a76852ffcdcb3.ctex"]
+source_file="res://World scenes/Test world/Tiles/green chill zone - 8x8 AUTUMN.png"
+dest_files=["res://.godot/imported/green chill zone - 8x8 AUTUMN.png-1786bd80feeae7f6b7e82663f7295515.ctex"]
 
 [params]
 

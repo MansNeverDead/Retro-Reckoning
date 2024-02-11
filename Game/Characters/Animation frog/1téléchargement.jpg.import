@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://t74vldtoni2f"
-path="res://.godot/imported/1téléchargement.jpg-0849fd6619fa4be99083803ba4271581.ctex"
+path="res://.godot/imported/1téléchargement.jpg-a289730003667c69c03d087b297aadcb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Animation frog/1téléchargement.jpg"
-dest_files=["res://.godot/imported/1téléchargement.jpg-0849fd6619fa4be99083803ba4271581.ctex"]
+source_file="res://World scenes/Test world/Characters/Animation frog/1téléchargement.jpg"
+dest_files=["res://.godot/imported/1téléchargement.jpg-a289730003667c69c03d087b297aadcb.ctex"]
 
 [params]
 

@@ -1,0 +1,112 @@
+[gd_scene load_steps=7 format=3 uid="uid://b5sruhxuiqyjo"]
+
+[ext_resource type="Script" path="res://World scenes/Test world/Tests/World scenes/game_test.gd" id="1_03yss"]
+[ext_resource type="PackedScene" uid="uid://k4cpg8ve8tfl" path="res://World scenes/Test world/Tests/Chracyter test/PLayer/Player.tscn" id="1_fxeu6"]
+[ext_resource type="PackedScene" uid="uid://dblyjx3mmpcbe" path="res://World scenes/Test world/Tests/Objects/Tree/object.tscn" id="2_2duqo"]
+[ext_resource type="PackedScene" uid="uid://plj4mtia4pkw" path="res://Menus/Pause_Menu/pause_menu.tscn" id="4_33cls"]
+[ext_resource type="Script" path="res://World scenes/Test world/Tests/World scenes/CanvasLayer2.gd" id="4_j30q3"]
+
+[sub_resource type="Curve2D" id="Curve2D_jmd38"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -136, 846, 0, 0, 0, 0, -121, -26, 0, 0, 0, 0, 1479, -23, 0, 0, 0, 0, 1487, 743, 0, 0, 0, 0, 1483, 852, 0, 0, 0, 0, -137, 846, 0, 0, 0, 0, -136, 846)
+}
+point_count = 7
+
+[node name="Game_test" type="Node2D"]
+position = Vector2(-11, -47)
+script = ExtResource("1_03yss")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+follow_viewport_enabled = true
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_left = -11.0
+offset_top = -47.0
+offset_right = 1205.0
+offset_bottom = 487.0
+
+[node name="Object" parent="." instance=ExtResource("2_2duqo")]
+position = Vector2(179, 218)
+scale = Vector2(0.890387, 0.988626)
+
+[node name="Object3" parent="." instance=ExtResource("2_2duqo")]
+position = Vector2(552, 246)
+scale = Vector2(0.792788, 0.977381)
+
+[node name="Object4" parent="." instance=ExtResource("2_2duqo")]
+position = Vector2(44.0001, 81)
+scale = Vector2(0.792789, 0.977381)
+
+[node name="Object2" parent="." instance=ExtResource("2_2duqo")]
+position = Vector2(456, 71)
+scale = Vector2(0.890387, 0.988626)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[node name="GameOver" type="CanvasLayer" parent="."]
+unique_name_in_owner = true
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="GameOver"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.00784314, 0.00784314, 0.00784314, 0.858824)
+
+[node name="Label" type="Label" parent="GameOver/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -347.0
+offset_top = -74.0
+offset_bottom = -51.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.19215, 5.94147)
+text = "GG Loser, lmao imagine dying, me personally"
+
+[node name="Object5" parent="." instance=ExtResource("2_2duqo")]
+position = Vector2(456, 71)
+scale = Vector2(0.890387, 0.988626)
+
+[node name="Player" parent="." instance=ExtResource("1_fxeu6")]
+position = Vector2(469, 165)
+
+[node name="Path2D" type="Path2D" parent="Player"]
+visible = false
+position = Vector2(-583, -419)
+scale = Vector2(1.08682, 1.14692)
+curve = SubResource("Curve2D_jmd38")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Player/Path2D"]
+unique_name_in_owner = true
+position = Vector2(-136, 846)
+rotation = -1.5536
+scale = Vector2(1, 1)
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+script = ExtResource("4_j30q3")
+
+[node name="Pause Menu" parent="CanvasLayer2" instance=ExtResource("4_33cls")]
+visible = false
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -101.0
+offset_top = -136.0
+offset_right = -101.0
+offset_bottom = -136.0
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(0.808735, 0.799409)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="health_depleted" from="Player" to="." method="_on_player_health_depleted"]

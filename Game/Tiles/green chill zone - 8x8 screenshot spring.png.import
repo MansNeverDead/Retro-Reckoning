@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4m0653ufsat"
-path="res://.godot/imported/green chill zone - 8x8 screenshot spring.png-60b4024f5a23b823fbb14f7553e8b264.ctex"
+path="res://.godot/imported/green chill zone - 8x8 screenshot spring.png-157e811f1b30acd9471493b7ea40d385.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tiles/green chill zone - 8x8 screenshot spring.png"
-dest_files=["res://.godot/imported/green chill zone - 8x8 screenshot spring.png-60b4024f5a23b823fbb14f7553e8b264.ctex"]
+source_file="res://World scenes/Test world/Tiles/green chill zone - 8x8 screenshot spring.png"
+dest_files=["res://.godot/imported/green chill zone - 8x8 screenshot spring.png-157e811f1b30acd9471493b7ea40d385.ctex"]
 
 [params]
 
