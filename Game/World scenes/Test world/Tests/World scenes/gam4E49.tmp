@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5sruhxuiqyjo"]
+
+[ext_resource type="PackedScene" uid="uid://k4cpg8ve8tfl" path="res://Tests/Chracyter test/PLayer/character_body_2d.tscn" id="1_fxeu6"]
+[ext_resource type="PackedScene" uid="uid://dblyjx3mmpcbe" path="res://Tests/Objects/object.tscn" id="2_2duqo"]
+[ext_resource type="PackedScene" uid="uid://dbha4agsyamkx" path="res://Tests/Chracyter test/Enemy/mobby.tscn" id="2_jk0rw"]
+
+[node name="Game test" type="Node2D"]
+position = Vector2(-11, -47)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1216.0
+offset_bottom = 534.0
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_fxeu6")]
+y_sort_enabled = true
+position = Vector2(508, 198)
+
+[node name="Mobby" parent="." instance=ExtResource("2_jk0rw")]
+position = Vector2(869, 205)
+scale = Vector2(0.0966703, 0.0927388)
+
+[node name="Object" parent="." instance=ExtResource("2_2duqo")]
+position = Vector2(179, 218)
+scale = Vector2(0.890387, 0.988626)
+
+[node name="Object3" parent="." instance=ExtResource("2_2duqo")]
+position = Vector2(552, 246)
+scale = Vector2(0.792788, 0.977381)
+
+[node name="Object2" parent="." instance=ExtResource("2_2duqo")]
+position = Vector2(456, 71)
+scale = Vector2(0.890387, 0.988626)

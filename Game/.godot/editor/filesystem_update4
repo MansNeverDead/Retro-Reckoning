@@ -1,0 +1,10 @@
+res://World scenes/Test world/Scenes/world.tscn
+res://World scenes/Test world/Tests/World scenes/game_test.tscn
+res://Menus/Main_Menu/main_menu.tscn
+res://Menus/Settings_Menu/Settings.tscn
+res://Menus/Pause_Menu/pause_menu.tscn
+res://Menus/Main_Menu/Main_Menu.gd
+res://World scenes/Test world/Tests/World scenes/game_test.gd
+res://Menus/Pause_Menu/pause_menu.gd
+res://Menus/Pause_Menu/pause_menu.gdshader
+res://World scenes/Test world/Tests/World scenes/CanvasLayer2.gd

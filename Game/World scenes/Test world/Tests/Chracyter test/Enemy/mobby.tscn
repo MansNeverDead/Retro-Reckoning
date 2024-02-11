@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbha4agsyamkx"]
+
+[ext_resource type="Script" path="res://World scenes/Test world/Tests/Chracyter test/Enemy/mobby.gd" id="1_nk2cu"]
+[ext_resource type="Texture2D" uid="uid://cnyg1og5bid7l" path="res://World scenes/Test world/Tests/Chracyter test/Enemy/0_Qozi7vWmqGSmly9P.jpg" id="1_s17jj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dd8mh"]
+size = Vector2(601, 313)
+
+[node name="Mobby" type="CharacterBody2D"]
+scale = Vector2(0.0912162, 0.148936)
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_nk2cu")
+
+[node name="0Qozi7vWmqGSmly9p" type="Sprite2D" parent="."]
+position = Vector2(352, 86)
+texture = ExtResource("1_s17jj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(352.5, 85.5)
+shape = SubResource("RectangleShape2D_dd8mh")
