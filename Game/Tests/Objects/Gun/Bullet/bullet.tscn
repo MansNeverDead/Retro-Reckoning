@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cnfjarx11wa16"]
+
+[ext_resource type="Texture2D" uid="uid://35815eg5px11" path="res://World scenes/Test world/Tests/Objects/Gun/Bullet/1916ed.jpg" id="1_6yimw"]
+[ext_resource type="Script" path="res://Tests/Objects/Gun/Bullet/bullet.gd" id="1_n17c5"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nse34"]
+
+[node name="Bullet" type="Area2D"]
+top_level = true
+collision_layer = 0
+collision_mask = 3
+script = ExtResource("1_n17c5")
+
+[node name="1916Ed" type="Sprite2D" parent="."]
+scale = Vector2(0.0206417, -0.0159263)
+texture = ExtResource("1_6yimw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_nse34")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
