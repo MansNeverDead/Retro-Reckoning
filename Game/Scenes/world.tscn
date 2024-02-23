@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://byc64wkamj5xf"]
 
-[ext_resource type="Texture2D" uid="uid://botp8m0ikyqwc" path="res://Tiles/green chill zone - 8x8 split sample.png" id="1_la5jx"]
-[ext_resource type="Texture2D" uid="uid://nggakrgxuexi" path="res://Tiles/green chill zone - 8x8 screenshot summer.png" id="2_6h5ru"]
-[ext_resource type="Texture2D" uid="uid://8da1ex45mbm3" path="res://Tiles/green chill zone - 8x8 SPRING.png" id="3_1c0bm"]
+[ext_resource type="Texture2D" uid="uid://botp8m0ikyqwc" path="res://World scenes/Test world/Tiles/green chill zone - 8x8 split sample.png" id="1_la5jx"]
+[ext_resource type="Texture2D" uid="uid://nggakrgxuexi" path="res://World scenes/Test world/Tiles/green chill zone - 8x8 screenshot summer.png" id="2_6h5ru"]
+[ext_resource type="Texture2D" uid="uid://8da1ex45mbm3" path="res://World scenes/Test world/Tiles/green chill zone - 8x8 SPRING.png" id="3_1c0bm"]
 [ext_resource type="Script" path="res://Scripts/testing_BALLS.gd" id="4_6t6af"]
-[ext_resource type="Texture2D" uid="uid://ccppd3iwt1fag" path="res://Characters/Animation frog/téléchargement.jpg" id="8_o3pfl"]
+[ext_resource type="Texture2D" uid="uid://ccppd3iwt1fag" path="res://World scenes/Test world/Characters/Animation frog/téléchargement.jpg" id="8_o3pfl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0gx1v"]
 texture = ExtResource("1_la5jx")

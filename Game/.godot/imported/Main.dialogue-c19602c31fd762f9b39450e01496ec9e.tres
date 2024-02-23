@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_y3r0x"]
+
+[resource]
+script = ExtResource("1_y3r0x")
+using_states = PackedStringArray()
+titles = {
+"weep": "2"
+}
+character_names = PackedStringArray("Ruqi")
+first_title = "2"
+lines = {
+"1": {
+"id": "1",
+"next_id": "2",
+"text": "weep",
+"type": "title"
+},
+"2": {
+"id": "2",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalVariables"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "isRunning"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "true"
+}])
+},
+"next_id": "3",
+"type": "mutation"
+},
+"3": {
+"character": "Ruqi",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Oh no [speed=0.1]no no no",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Oh no [speed=0.1]no no no",
+"type": "dialogue"
+},
+"4": {
+"id": "4",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalVariables"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "isRunning"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "false"
+}])
+},
+"next_id": "5",
+"type": "mutation"
+},
+"5": {
+"id": "5",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+}
+}
+raw_text = "~ weep
+set GlobalVariables.isRunning = true
+Ruqi: Oh no [speed=0.1]no no no
+set GlobalVariables.isRunning = false
+=> END "
+metadata/dialogue_manager_version = "2.34.0"

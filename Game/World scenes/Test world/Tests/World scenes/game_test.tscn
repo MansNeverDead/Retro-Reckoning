@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://World scenes/Test world/Tests/World scenes/game_test.gd" id="1_03yss"]
 [ext_resource type="PackedScene" uid="uid://k4cpg8ve8tfl" path="res://World scenes/Test world/Tests/Chracyter test/PLayer/Player.tscn" id="1_fxeu6"]
 [ext_resource type="PackedScene" uid="uid://dblyjx3mmpcbe" path="res://World scenes/Test world/Tests/Objects/Tree/object.tscn" id="2_2duqo"]
-[ext_resource type="PackedScene" uid="uid://plj4mtia4pkw" path="res://Menus/Pause_Menu/pause_menu.tscn" id="4_33cls"]
+[ext_resource type="PackedScene" uid="uid://plj4mtia4pkw" path="res://OverWorldCMDS/Menus/Pause_Menu/pause_menu.tscn" id="4_33cls"]
 [ext_resource type="Script" path="res://World scenes/Test world/Tests/World scenes/CanvasLayer2.gd" id="4_j30q3"]
 
 [sub_resource type="Curve2D" id="Curve2D_jmd38"]

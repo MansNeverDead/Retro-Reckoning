@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://ces1bytpoju4h"]
+
+[ext_resource type="Script" path="res://OverWorldCMDS/Menus/Story Mode/story_mode.gd" id="1_oljm2"]
+
+[node name="Story Mode" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_oljm2")
+
+[node name="Solo" type="Button" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Solo"
+
+[node name="Duo" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 35.0
+offset_right = 41.0
+offset_bottom = 66.0
+text = "Duo"
+
+[connection signal="pressed" from="Solo" to="." method="_on_solo_pressed"]
+[connection signal="pressed" from="Duo" to="." method="_on_duo_pressed"]

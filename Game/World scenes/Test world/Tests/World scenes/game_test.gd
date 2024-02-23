@@ -4,7 +4,7 @@ extends Node2D
 var paused = false
 
 func _process(delta):
-	if Input.is_action_just_pressed("Pause"):
+	if Input.is_action_just_pressed("pause"):
 		pauseMenu()
 
 # here when everything is ready, it will spawn mobs, you can only do this with the ready() bc else it will for fucks sake

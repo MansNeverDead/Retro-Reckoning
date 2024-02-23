@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxbbjwaklrbco"]
+
+[ext_resource type="Script" path="res://OverWorldCMDS/Interaction/interactionManager.gd" id="1_immqs"]
+[ext_resource type="FontFile" uid="uid://j1lekypt68d4" path="res://OverWorldCMDS/Dialogue/Stacked pixel.ttf" id="1_y3l6v"]
+
+[node name="interactionManager" type="Node2D"]
+z_index = -20
+position = Vector2(0, 70.265)
+script = ExtResource("1_immqs")
+
+[node name="Label" type="Label" parent="."]
+z_index = 20
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -52.0
+offset_right = 52.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_y3l6v")
+text = "[E] to interact"
+horizontal_alignment = 1
+vertical_alignment = 1

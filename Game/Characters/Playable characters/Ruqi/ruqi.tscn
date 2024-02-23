@@ -1,0 +1,78 @@
+[gd_scene load_steps=7 format=3 uid="uid://c4shlrtelach"]
+
+[ext_resource type="Script" path="res://Characters/Playable characters/Ruqi/ruqi.gd" id="1_7vth0"]
+[ext_resource type="Texture2D" uid="uid://baug6r5uf7lc5" path="res://Characters/Playable characters/Ruqi/Untitled3_20230617145637.png" id="1_imemr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k7n7q"]
+size = Vector2(25, 106)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xd11p"]
+radius = 20.8806
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ewa8q"]
+radius = 6.0
+height = 43.7858
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_po4i8"]
+radius = 104.785
+
+[node name="Ruqi" type="CharacterBody2D" groups=["player"]]
+collision_layer = 2
+script = ExtResource("1_7vth0")
+
+[node name="Untitled320230617145637" type="Sprite2D" parent="."]
+position = Vector2(559, 323)
+scale = Vector2(0.162109, 0.173828)
+texture = ExtResource("1_imemr")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(550.5, 380)
+shape = SubResource("RectangleShape2D_k7n7q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(546, 307)
+shape = SubResource("CircleShape2D_xd11p")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(502, 326)
+rotation = -0.877153
+shape = SubResource("CapsuleShape2D_ewa8q")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+position = Vector2(575, 341)
+rotation = -1.07187
+shape = SubResource("CapsuleShape2D_ewa8q")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="."]
+position = Vector2(578, 362)
+rotation = 0.953417
+shape = SubResource("CapsuleShape2D_ewa8q")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="."]
+position = Vector2(530, 335)
+rotation = 1.53137
+shape = SubResource("CapsuleShape2D_ewa8q")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="."]
+position = Vector2(551, 428)
+rotation = 1.60896
+shape = SubResource("CapsuleShape2D_ewa8q")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(554, 331)
+
+[node name="detection_area" type="Area2D" parent="."]
+light_mask = 4
+visibility_layer = 4
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detection_area"]
+position = Vector2(549, 342)
+shape = SubResource("CircleShape2D_po4i8")
+debug_color = Color(0.956863, 0, 0.533333, 0.419608)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="detection_area" to="." method="_on_detection_area_body_exited"]
