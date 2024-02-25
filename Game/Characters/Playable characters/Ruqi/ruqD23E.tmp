@@ -15,7 +15,7 @@ editor_description = "Layer determines what  can detect me
 mask determine what i can detect"
 position = Vector2(-550, -357)
 collision_layer = 2
-collision_mask = 225
+collision_mask = 229
 script = ExtResource("1_7vth0")
 
 [node name="Untitled320230617145637" type="Sprite2D" parent="."]

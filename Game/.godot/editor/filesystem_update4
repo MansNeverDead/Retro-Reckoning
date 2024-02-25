@@ -1,13 +1,13 @@
-res://Characters/NPC/Humans/character_body_2d.tscn
+res://Characters/Playable characters/Ruqi/ruqi.tscn
+res://World scenes/World 1 scenes/Level 1/level_1_solo.tscn
 res://Scenes/world.tscn
 res://World scenes/Test world/Scenes/world.tscn
-res://Characters/Playable characters/Ruqi/ruqi.tscn
 res://OverWorldCMDS/Menus/Story Mode/story_mode.tscn
 res://Tests/Objects/Gun/gun.tscn
-res://World scenes/World 1 scenes/Level 1/level_1_solo.tscn
 res://Tiles/Tiles.tscn
-res://Characters/Playable characters/Ruqi/ruqi.gd
-res://OverWorldCMDS/Interaction/interactionManager.tscn
-res://OverWorldCMDS/Interaction/interactionManager.gd
-res://OverWorldCMDS/globalVariables.gd
 res://addons/dialogue_manager/dialogue_label.tscn
+res://Tests/Objects/static_body_2d.tscn
+res://Tests/Objects/static_body_2d.gd
+res://Characters/Playable characters/Ruqi/ruqi.gd
+res://Tests/Objects/Wall.tscn
+res://Characters/NPC/Humans/character_body_2d.tscn

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1qtsya05vbwi"
-path="res://.godot/imported/1659904877693.png-d7ddb9af7d19d4947024e4f50c7e7769.ctex"
+uid="uid://dvdfnc58e25yj"
+path="res://.godot/imported/SPOILER_IMG_20231202_075326.webp-26e1bd9280637b4e703195bb6fa16908.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://1659904877693.png"
-dest_files=["res://.godot/imported/1659904877693.png-d7ddb9af7d19d4947024e4f50c7e7769.ctex"]
+source_file="res://Characters/Playable characters/Ruqi/SPOILER_IMG_20231202_075326.webp"
+dest_files=["res://.godot/imported/SPOILER_IMG_20231202_075326.webp-26e1bd9280637b4e703195bb6fa16908.ctex"]
 
 [params]
 

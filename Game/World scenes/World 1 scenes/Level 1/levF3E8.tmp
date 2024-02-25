@@ -1,0 +1,68 @@
+[gd_scene load_steps=9 format=3 uid="uid://b7563owddjja0"]
+
+[ext_resource type="PackedScene" uid="uid://c4shlrtelach" path="res://Characters/Playable characters/Ruqi/ruqi.tscn" id="1_posvu"]
+[ext_resource type="PackedScene" uid="uid://cohlimiyqkmbq" path="res://Tiles/Tiles.tscn" id="2_k85bw"]
+[ext_resource type="PackedScene" uid="uid://balj8v10452ij" path="res://Characters/NPC/Humans/character_body_2d.tscn" id="3_sbol2"]
+[ext_resource type="PackedScene" uid="uid://hcxrkmq75oia" path="res://OverWorldCMDS/Interaction/interactionArea/interactionArea.tscn" id="4_guytd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xxdal"]
+radius = 99.0454
+
+[sub_resource type="Animation" id="Animation_mk4j8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ruqi:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-156, -42)]
+}
+
+[sub_resource type="Animation" id="Animation_gpjv0"]
+resource_name = "walking cry baby son of a bitch"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ruqi:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.2, 0.4, 0.7, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-156, -42), Vector2(-79, -24), Vector2(41, -74), Vector2(110, -26), Vector2(211, -110), Vector2(284, -27)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nimny"]
+_data = {
+"RESET": SubResource("Animation_mk4j8"),
+"walking cry baby son of a bitch": SubResource("Animation_gpjv0")
+}
+
+[node name="Level 1 Solo" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_sbol2")]
+position = Vector2(944, 330)
+
+[node name="InteractionArea" parent="CharacterBody2D" instance=ExtResource("4_guytd")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/InteractionArea"]
+position = Vector2(1, 0)
+shape = SubResource("CircleShape2D_xxdal")
+
+[node name="Ruqi" parent="." instance=ExtResource("1_posvu")]
+position = Vector2(-156, -42)
+
+[node name="Desert" parent="." instance=ExtResource("2_k85bw")]
+position = Vector2(330, 457)
+layer_0/tile_data = PackedInt32Array(-196607, 65539, 0, -196606, 65539, 0, -196605, 65539, 0, -196604, 65539, 0, -196603, 65539, 0, -196602, 65539, 0, -196601, 65539, 0, -196600, 65539, 0, -196599, 65539, 0, -196598, 65539, 0, -196597, 65539, 0, -196596, 65539, 0, -196595, 65539, 0, -196594, 65539, 0, -196593, 65539, 0, -196592, 65539, 0, -196591, 65539, 0, -196590, 65539, 0, -196589, 65539, 0, -196588, 65539, 0, -196587, 65539, 0, -196586, 65539, 0, -196585, 65539, 0, -196584, 65539, 0, -196583, 65539, 0, -196582, 65539, 0, -196581, 65539, 0, -196580, 65539, 0, -196579, 65539, 0, -196578, 65539, 0, -196577, 65539, 0, -196576, 65539, 0, -196575, 65539, 0, -196574, 65539, 0, -196573, 65539, 0, -196572, 65539, 0, -196571, 65539, 0, -196570, 65539, 0, -196569, 65539, 0, -196568, 65539, 0, -196567, 65539, 0, -196566, 65539, 0, -196565, 65539, 0, -196564, 65539, 0, -196563, 65539, 0, -196562, 65539, 0, -196561, 65539, 0, -196560, 65539, 0, -196559, 65539, 0, -196558, 65539, 0, -196557, 65539, 0, -196556, 65539, 0, -196555, 65539, 0, -196554, 65539, 0, -196553, 65539, 0, -196552, 65539, 0, -196551, 65539, 0, -196550, 65539, 0, -196549, 65539, 0, -196548, 65539, 0, -196547, 65539, 0, -196546, 65539, 0, -196545, 65539, 0, -196544, 65539, 0, -196543, 65539, 0, -262080, 65536, 1, -327616, 65536, 1, -393152, 65536, 1, -458688, 65536, 1, -524224, 65536, 1, -589760, 65536, 1, -655296, 65536, 1, -720832, 65536, 1, -786368, 65536, 1, -851904, 65536, 1, -917440, 65536, 1, -982976, 65536, 1, -1048512, 65536, 1, -1114048, 65536, 1, -1179584, 65536, 1, -1245120, 65536, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_nimny")
+}

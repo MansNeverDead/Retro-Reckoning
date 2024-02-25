@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxwj5o82lvgy0"]
+
+[ext_resource type="Texture2D" uid="uid://cx5dom8v8ayna" path="res://Tests/Objects/Tree/1_uHeNiVgcg08hKTAKWZhLkA.jpeg" id="1_j8dbm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0yk1h"]
+size = Vector2(1956.11, 189.2)
+
+[node name="Wall" type="StaticBody2D"]
+scale = Vector2(0.210878, 0.171141)
+collision_layer = 128
+collision_mask = 0
+
+[node name="1UHeNiVgcg08hKtakwZhLkA" type="Sprite2D" parent="."]
+position = Vector2(545, -852.609)
+scale = Vector2(1, 2.97259)
+texture = ExtResource("1_j8dbm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(533.483, -835.569)
+scale = Vector2(0.729693, 16.3682)
+shape = SubResource("RectangleShape2D_0yk1h")
