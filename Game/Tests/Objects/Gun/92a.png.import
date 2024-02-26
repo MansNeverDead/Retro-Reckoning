@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://berxa8hewdn46"
-path="res://.godot/imported/92a.png-6179533e9570dc21fb563d325c5ff97f.ctex"
+path="res://.godot/imported/92a.png-e791af4ba700a05e1e33eb2ce31bd272.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://World scenes/Test world/Tests/Objects/Gun/92a.png"
-dest_files=["res://.godot/imported/92a.png-6179533e9570dc21fb563d325c5ff97f.ctex"]
+source_file="res://Tests/Objects/Gun/92a.png"
+dest_files=["res://.godot/imported/92a.png-e791af4ba700a05e1e33eb2ce31bd272.ctex"]
 
 [params]
 

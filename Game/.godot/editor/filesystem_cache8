@@ -1,87 +1,154 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1707589147
-icon.svg::CompressedTexture2D::6149203321606812874::1707512434::1707512434::1::::<><>::
-README.md::TextFile::-1::1707512434::0::1::::<><>::
-::res://Background/::1707583374
-::res://Characters/::1707576109
-::res://Characters/NPC/::1707576149
-::res://Characters/NPC/animals/::1707576149
-::res://Characters/NPC/Humans/::1707576137
-::res://Characters/NPC/Zombies/::1707576126
-::res://Characters/Playable characters/::1707576109
-::res://Menus/::1707587965
-::res://Menus/Main_Menu/::1707588970
-Main_Menu.gd::GDScript::-1::1707587633::0::1::::<>Control<>::
-main_menu.tscn::PackedScene::594507360049299271::1707588970::0::1::::<><>::res://Menus/Main_Menu/Main_Menu.gd
-::res://Menus/Pause_Menu/::1707588971
-pause_menu.tscn::PackedScene::1076139710819409998::1707588971::0::1::::<><>::
-::res://Menus/Settings_Menu/::1707588971
-Settings.gd::GDScript::-1::1707585720::0::1::::<>Control<>::
-Settings.tscn::PackedScene::3437825608533835839::1707588971::0::1::::<><>::res://Menus/Settings_Menu/Settings.gd
-::res://Obstacles/::1707583400
-::res://Tiles/::1707583496
-::res://Weapons/::1707583356
-::res://Weapons/Guns/::1707583356
-::res://World scenes/::1707574400
-::res://World scenes/Test world/::1707574401
-export_presets.cfg::TextFile::-1::1705264229::0::1::::<><>::
-icon.svg::CompressedTexture2D::3461408215310631084::1705264229::1707574401::1::::<><>::
-::res://World scenes/Test world/Characters/::1705487315
-::res://World scenes/Test world/Characters/Animation frog/::1707574406
-1téléchargement.jpg::CompressedTexture2D::1401446994988526115::1705264229::1707574406::1::::<><>::
-2téléchargement.jpg::CompressedTexture2D::3298208930575756425::1705264229::1707574406::1::::<><>::
-3téléchargement.jpg::CompressedTexture2D::3251971775139564299::1705264229::1707574406::1::::<><>::
-4téléchargement.jpg::CompressedTexture2D::918995742309734580::1705264229::1707574406::1::::<><>::
-5téléchargement.jpg::CompressedTexture2D::7463908366891018848::1705264229::1707574405::1::::<><>::
-6téléchargement.jpg::CompressedTexture2D::5478296877002961073::1705264229::1707574405::1::::<><>::
-7téléchargement.jpg::CompressedTexture2D::2952279785014130691::1705264229::1707574405::1::::<><>::
-téléchargement.jpg::CompressedTexture2D::4945102317284611930::1705264229::1707574405::1::::<><>::
-::res://World scenes/Test world/Scenes/::1707588969
-tiles.tscn::PackedScene::2079654217959063093::1705264229::0::1::::<><>::uid://dq2mivnj54io6::::res://Tilename.png
-world.tscn::PackedScene::4077016872291172755::1707588969::0::1::::<><>::uid://botp8m0ikyqwc::::res://World scenes/Test world/Tiles/green chill zone - 8x8 split sample.png<>uid://nggakrgxuexi::::res://World scenes/Test world/Tiles/green chill zone - 8x8 screenshot summer.png<>uid://8da1ex45mbm3::::res://World scenes/Test world/Tiles/green chill zone - 8x8 SPRING.png<>res://World scenes/Test world/Scripts/testing_BALLS.gd<>uid://ccppd3iwt1fag::::res://World scenes/Test world/Characters/Animation frog/téléchargement.jpg
-::res://World scenes/Test world/Scenes/Enemy scenes/::1705264685
-::res://World scenes/Test world/Scenes/Player scenes/::1705264667
-::res://World scenes/Test world/Scripts/::1705487319
-Frog.gd::GDScript::-1::1705264229::0::1::::<>AnimatedSprite2D<>::
-Function Library.txt::TextFile::-1::1705264229::0::1::::<><>::
-function_library.gd::GDScript::-1::1705264229::0::1::::<>Node<>::
-testing_BALLS.gd::GDScript::-1::1705264229::0::1::::<>CharacterBody2D<>::
-testing_script.gd::GDScript::-1::1705264229::0::1::::<>Node<>::
-::res://World scenes/Test world/Tests/::1705487320
-::res://World scenes/Test world/Tests/Chracyter test/::1705489771
-::res://World scenes/Test world/Tests/Chracyter test/Enemy/::1707574405
-0_Qozi7vWmqGSmly9P.jpg::CompressedTexture2D::5735252879336630375::1705489685::1707574405::1::::<><>::
-mobby.gd::GDScript::-1::1705665215::0::1::::<>CharacterBody2D<>::
-mobby.tscn::PackedScene::7243953337137746395::1707574400::0::1::::<><>::res://World scenes/Test world/Tests/Chracyter test/Enemy/mobby.gd<>uid://cnyg1og5bid7l::::res://World scenes/Test world/Tests/Chracyter test/Enemy/0_Qozi7vWmqGSmly9P.jpg
-::res://World scenes/Test world/Tests/Chracyter test/PLayer/::1707574405
-92a.png::CompressedTexture2D::2100807263898215892::1705618514::1707574405::1::::<><>::
-character_body_2d.gd::GDScript::-1::1705664480::0::1::::<>CharacterBody2D<>::
-Player.tscn::PackedScene::761903979221618729::1707574400::0::1::::<><>::uid://t74vldtoni2f::::res://World scenes/Test world/Characters/Animation frog/1téléchargement.jpg<>res://World scenes/Test world/Tests/Chracyter test/PLayer/character_body_2d.gd<>uid://cg5ooh4grdt25::::res://World scenes/Test world/Tests/Objects/Gun/gun.tscn
-::res://World scenes/Test world/Tests/Objects/::1705618558
-::res://World scenes/Test world/Tests/Objects/Gun/::1707585106
-92a.png::CompressedTexture2D::2703668715193336165::1705618606::1707574403::1::::<><>::
-gun.gd::GDScript::-1::1707585106::0::1::::<>Area2D<>::
-gun.tscn::PackedScene::5256781213607838888::1707574400::0::1::::<><>::uid://berxa8hewdn46::::res://World scenes/Test world/Tests/Objects/Gun/92a.png<>res://World scenes/Test world/Tests/Objects/Gun/gun.gd
-::res://World scenes/Test world/Tests/Objects/Gun/Bullet/::1707574405
-1916ed.jpg::CompressedTexture2D::2029270628082562306::1705620618::1707574404::1::::<><>::
-bullet.gd::GDScript::-1::1705665412::0::1::::<>Area2D<>::
-bullet.tscn::PackedScene::5696165606030205539::1707574400::0::1::::<><>::uid://35815eg5px11::::res://World scenes/Test world/Tests/Objects/Gun/Bullet/1916ed.jpg<>res://World scenes/Test world/Tests/Objects/Gun/Bullet/bullet.gd
-::res://World scenes/Test world/Tests/Objects/Tree/::1707574404
-1_uHeNiVgcg08hKTAKWZhLkA.jpeg::CompressedTexture2D::6449323938032726794::1705334614::1707574403::1::::<><>::
-object.tscn::PackedScene::7253633581836962278::1707574400::0::1::::<><>::uid://cx5dom8v8ayna::::res://World scenes/Test world/Tests/Objects/Tree/1_uHeNiVgcg08hKTAKWZhLkA.jpeg
-::res://World scenes/Test world/Tests/World scenes/::1707588970
-game_test.gd::GDScript::-1::1707588945::0::1::::<>Node2D<>::
-game_test.tscn::PackedScene::4530313101276285024::1707588970::0::1::::<><>::res://World scenes/Test world/Tests/World scenes/game_test.gd<>uid://k4cpg8ve8tfl::::res://World scenes/Test world/Tests/Chracyter test/PLayer/Player.tscn<>uid://dblyjx3mmpcbe::::res://World scenes/Test world/Tests/Objects/Tree/object.tscn<>uid://plj4mtia4pkw::::res://Menus/Pause_Menu/pause_menu.tscn
-::res://World scenes/Test world/Tiles/::1707574402
-green chill zone - 8x8 AUTUMN.png::CompressedTexture2D::6636924516387175911::1705264229::1707574402::1::::<><>::
-green chill zone - 8x8 screenshot autumn.png::CompressedTexture2D::463481453953482613::1705264229::1707574402::1::::<><>::
-green chill zone - 8x8 screenshot spring.png::CompressedTexture2D::201019566771741123::1705264229::1707574402::1::::<><>::
-green chill zone - 8x8 screenshot summer.png::CompressedTexture2D::925206087574694710::1705264229::1707574402::1::::<><>::
-green chill zone - 8x8 split sample.png::CompressedTexture2D::3409258027321170126::1705264229::1707574402::1::::<><>::
-green chill zone - 8x8 SPRING.png::CompressedTexture2D::2322471650940868056::1705264229::1707574401::1::::<><>::
-green chill zone - 8x8 SUMMER.png::CompressedTexture2D::2045371266592659467::1705264229::1707574401::1::::<><>::
-green chill zone - 8x8 WINTER.png::CompressedTexture2D::4963133199198202517::1705264229::1707574401::1::::<><>::
-::res://World scenes/World 1 scenes/::1707575237
-::res://World scenes/World 1 scenes/Level 1/::1707575237
-::res://World scenes/World 2 scenes/::1705264734
-::res://World scenes/World 3 Scenes/::1705264742
+::res://::1708976184
+icon.svg::CompressedTexture2D::6149203321606812874::1708964820::1708965162::1::::<><>::
+README.md::TextFile::-1::1707512436::0::1::::<><>::
+::res://Background/::1707583376
+::res://Characters/::1708964817
+::res://Characters/NPC/::1708964817
+::res://Characters/NPC/animals/::1707576150
+::res://Menus/::1708964819
+::res://Menus/Main_Menu/::1708964819
+Main_Menu.gd::GDScript::-1::1708964819::0::1::::<>Control<>::
+main_menu.tscn::PackedScene::594507360049299271::1708964819::0::1::::<><>::res://Menus/Main_Menu/Main_Menu.gd
+::res://Menus/Pause_Menu/::1708964819
+pause_menu.gd::GDScript::-1::1708964819::0::1::::<>Control<>::
+pause_menu.gdshader::Shader::-1::1708964819::0::1::::<><>::
+pause_menu.tscn::PackedScene::1076139710819409998::1708964819::0::1::::<><>::res://Menus/Pause_Menu/pause_menu.gd<>res://Menus/Pause_Menu/pause_menu.gdshader
+::res://Menus/Settings_Menu/::1708964819
+Settings.gd::GDScript::-1::1708964819::0::1::::<>Control<>::
+Settings.tscn::PackedScene::3437825608533835839::1708964819::0::1::::<><>::res://Menus/Settings_Menu/Settings.gd
+::res://Obstacles/::1707583402
+::res://Scenes/::1708964817
+::res://Scenes/Enemy scenes/::1705264686
+::res://Scenes/Player scenes/::1705264668
+::res://Scenes/World scenes/::1707667809
+::res://Scenes/World scenes/World 1 scenes/::1705264724
+::res://Scenes/World scenes/World 2 scenes/::1705264736
+::res://Scenes/World scenes/World 3 Scenes/::1705264744
+::res://scripts/::1708964820
+::res://scripts/audio/::1708964820
+audio_manager.gd::GDScript::-1::1708964820::0::1::::<>Node<>::
+::res://scripts/camera/::1708964820
+camera_area.gd::GDScript::-1::1708964820::0::1::::CameraArea<>Area2D<>::
+camera_area_targeter.gd::GDScript::-1::1708964820::0::1::::CameraAreaTargeter<>Node<>::
+camera_shaker.gd::GDScript::-1::1708964820::0::1::::CameraShaker<>Node<>::
+camera_shake_manager.gd::GDScript::-1::1708964820::0::1::::<>Node<>::
+camera_targeter.gd::GDScript::-1::1708964820::0::1::::CameraTargeter<>Node<>::
+screensize_viewport.gd::GDScript::-1::1708964820::0::1::::MinimapViewport<>SubViewport<>::
+::res://scripts/events/::1708964820
+camera_area_event.gd::GDScript::-1::1708964820::0::1::::CameraAreaEvent<>Resource<>::
+game_event.gd::GDScript::-1::1708964820::0::1::::GameEvent<>Resource<>::
+::res://scripts/gameplay/::1708964820
+gun.gd::GDScript::-1::1708964820::0::1::::Gun<>Node2D<>::
+inventory.gd::GDScript::-1::1708964820::0::1::::Inventory<>Resource<>::
+item.gd::GDScript::-1::1708964820::0::1::::Item<>Resource<>::
+projectile.gd::GDScript::-1::1708964820::0::1::::Projectile<>Node2D<>::
+push_grid_object.gd::GDScript::-1::1708964820::0::1::::GridPushObject<>Area2D<>::
+::res://scripts/interaction/::1708964820
+interactible.gd::GDScript::-1::1708964820::0::1::::Interactable<>Area2D<>::
+interactor.gd::GDScript::-1::1708964820::0::1::::Interactor<>Area2D<>::
+::res://scripts/interaction/dialog/::1708964820
+dialog_interactable.gd::GDScript::-1::1708964820::0::1::::DialogInteractable<>Interactable<>::
+::res://scripts/interaction/effects/::1708964820
+camera_shake_effect.gd::GDScript::-1::1708964820::0::1::::CameraShakeEffect<>EmptyEffect<>::
+color_flicker_effect.gd::GDScript::-1::1708964820::0::1::::ColorFlickerEffect<>EmptyEffect<>::
+destroy_effect.gd::GDScript::-1::1708964820::0::1::::DestroyEffect<>EmptyEffect<>::
+empty_effect.gd::GDScript::-1::1708964820::0::1::::EmptyEffect<>Resource<>::
+particle_effect.gd::GDScript::-1::1708964820::0::1::::ParticleEffect<>EmptyEffect<>::
+slow_mo_effect.gd::GDScript::-1::1708964820::0::1::::SlowMoEffect<>EmptyEffect<>::
+sprite_shake_effect.gd::GDScript::-1::1708964820::0::1::::ShakeEffect<>EmptyEffect<>::
+::res://scripts/interaction/hit/::1708964820
+base_hitbox.gd::GDScript::-1::1708964820::0::1::::BaseHitBox<>Area2D<>::
+hitbox.gd::GDScript::-1::1708964820::0::1::::HitBox<>BaseHitBox<>::
+hitbox_ref.gd::GDScript::-1::1708964820::0::1::::HitBoxRef<>BaseHitBox<>::
+hurtbox.gd::GDScript::-1::1708964820::0::1::::HurtBox<>Area2D<>::
+::res://Tests/::1707667809
+::res://Tests/Chracyter test/::1707667809
+::res://Tests/Chracyter test/Enemy/::1708965161
+0_Qozi7vWmqGSmly9P.jpg::CompressedTexture2D::5735252879336630375::1705489686::1708965161::1::::<><>::
+mobby.gd::GDScript::-1::1705665216::0::1::::<>CharacterBody2D<>::
+mobby.tscn::PackedScene::7243953337137746395::1708964819::0::1::::<><>::res://World scenes/Test world/Tests/Chracyter test/Enemy/mobby.gd<>uid://cnyg1og5bid7l::::res://World scenes/Test world/Tests/Chracyter test/Enemy/0_Qozi7vWmqGSmly9P.jpg
+::res://Tests/Chracyter test/PLayer/::1708965161
+92a.png::CompressedTexture2D::2100807263898215892::1705618516::1708965161::1::::<><>::
+character_body_2d.gd::GDScript::-1::1708355890::0::1::::<>CharacterBody2D<>::
+Player.tscn::PackedScene::761903979221618729::1708964819::0::1::::<><>::uid://t74vldtoni2f::::res://World scenes/Test world/Characters/Animation frog/1téléchargement.jpg<>res://World scenes/Test world/Tests/Chracyter test/PLayer/character_body_2d.gd<>uid://cg5ooh4grdt25::::res://World scenes/Test world/Tests/Objects/Gun/gun.tscn
+::res://Tests/Objects/::1708964817
+::res://Tests/Objects/Gun/::1708965161
+92a.png::CompressedTexture2D::2703668715193336165::1705618608::1708965161::1::::<><>::
+gun.gd::GDScript::-1::1708964819::0::1::::<>Area2D<>::
+gun.tscn::PackedScene::5256781213607838888::1708964819::0::1::::<><>::uid://berxa8hewdn46::::res://World scenes/Test world/Tests/Objects/Gun/92a.png<>res://World scenes/Test world/Tests/Objects/Gun/gun.gd
+::res://Tests/Objects/Gun/Bullet/::1708965162
+1916ed.jpg::CompressedTexture2D::2029270628082562306::1705620620::1708965162::1::::<><>::
+bullet.gd::GDScript::-1::1705665414::0::1::::<>Area2D<>::
+bullet.tscn::PackedScene::5696165606030205539::1708964819::0::1::::<><>::uid://35815eg5px11::::res://World scenes/Test world/Tests/Objects/Gun/Bullet/1916ed.jpg<>res://World scenes/Test world/Tests/Objects/Gun/Bullet/bullet.gd
+::res://Tests/Objects/Tree/::1708965162
+1_uHeNiVgcg08hKTAKWZhLkA.jpeg::CompressedTexture2D::6449323938032726794::1705334616::1708965162::1::::<><>::
+object.tscn::PackedScene::7253633581836962278::1708964819::0::1::::<><>::uid://cx5dom8v8ayna::::res://World scenes/Test world/Tests/Objects/Tree/1_uHeNiVgcg08hKTAKWZhLkA.jpeg
+::res://Tests/World scenes/::1708964820
+CanvasLayer2.gd::GDScript::-1::1707664752::0::1::::<>CanvasLayer<>::
+game_test.gd::GDScript::-1::1708964820::0::1::::<>Node2D<>::
+game_test.tscn::PackedScene::4530313101276285024::1708964820::0::1::::<><>::res://World scenes/Test world/Tests/World scenes/game_test.gd<>uid://k4cpg8ve8tfl::::res://World scenes/Test world/Tests/Chracyter test/PLayer/Player.tscn<>uid://dblyjx3mmpcbe::::res://World scenes/Test world/Tests/Objects/Tree/object.tscn<>uid://plj4mtia4pkw::::res://Menus/Pause_Menu/pause_menu.tscn<>res://World scenes/Test world/Tests/World scenes/CanvasLayer2.gd
+::res://Weapons/::1707667809
+::res://Weapons/Guns/::1707583358
+::res://World scenes/::1708964817
+::res://World scenes/Test world/::1707667813
+export_presets.cfg::TextFile::-1::1707664752::0::1::::<><>::
+icon.svg::CompressedTexture2D::3461408215310631084::1705264230::1707574402::1::::<><>::
+::res://World scenes/Test world/Characters/::1707667809
+::res://World scenes/Test world/Characters/Animation frog/::1707667809
+1téléchargement.jpg::CompressedTexture2D::1401446994988526115::1705264230::1707574408::1::::<><>::
+2téléchargement.jpg::CompressedTexture2D::3298208930575756425::1705264230::1707574408::1::::<><>::
+3téléchargement.jpg::CompressedTexture2D::3251971775139564299::1705264230::1707574408::1::::<><>::
+4téléchargement.jpg::CompressedTexture2D::918995742309734580::1705264230::1707574408::1::::<><>::
+5téléchargement.jpg::CompressedTexture2D::7463908366891018848::1705264230::1707574406::1::::<><>::
+6téléchargement.jpg::CompressedTexture2D::5478296877002961073::1705264230::1707574406::1::::<><>::
+7téléchargement.jpg::CompressedTexture2D::2952279785014130691::1705264230::1707574406::1::::<><>::
+téléchargement.jpg::CompressedTexture2D::4945102317284611930::1705264230::1707574406::1::::<><>::
+::res://World scenes/Test world/Scenes/::1708886057
+tiles.tscn::PackedScene::2079654217959063093::1707664752::0::1::::<><>::uid://dq2mivnj54io6::::res://Tilename.png
+world.tscn::PackedScene::4077016872291172755::1708886057::0::1::::<><>::uid://botp8m0ikyqwc::::res://World scenes/Test world/Tiles/green chill zone - 8x8 split sample.png<>uid://nggakrgxuexi::::res://World scenes/Test world/Tiles/green chill zone - 8x8 screenshot summer.png<>uid://8da1ex45mbm3::::res://World scenes/Test world/Tiles/green chill zone - 8x8 SPRING.png<>res://World scenes/Test world/Scripts/testing_BALLS.gd<>uid://ccppd3iwt1fag::::res://World scenes/Test world/Characters/Animation frog/téléchargement.jpg
+::res://World scenes/Test world/Scenes/Enemy scenes/::1705264686
+::res://World scenes/Test world/Scenes/Player scenes/::1705264668
+::res://World scenes/Test world/Scripts/::1707667813
+Frog.gd::GDScript::-1::1707664752::0::1::::<>AnimatedSprite2D<>::
+Function Library.txt::TextFile::-1::1707664752::0::1::::<><>::
+function_library.gd::GDScript::-1::1707664752::0::1::::<>Node<>::
+testing_BALLS.gd::GDScript::-1::1707664752::0::1::::<>CharacterBody2D<>::
+testing_script.gd::GDScript::-1::1707664752::0::1::::<>Node<>::
+::res://World scenes/Test world/Tests/::1707667813
+::res://World scenes/Test world/Tests/Chracyter test/::1707667813
+::res://World scenes/Test world/Tests/Chracyter test/Enemy/::1707667813
+0_Qozi7vWmqGSmly9P.jpg::CompressedTexture2D::5735252879336630375::1705489686::1707574406::1::::<><>::
+mobby.gd::GDScript::-1::1705665216::0::1::::<>CharacterBody2D<>::
+mobby.tscn::PackedScene::7243953337137746395::1707574402::0::1::::<><>::res://World scenes/Test world/Tests/Chracyter test/Enemy/mobby.gd<>uid://cnyg1og5bid7l::::res://World scenes/Test world/Tests/Chracyter test/Enemy/0_Qozi7vWmqGSmly9P.jpg
+::res://World scenes/Test world/Tests/Chracyter test/PLayer/::1707667813
+92a.png::CompressedTexture2D::2100807263898215892::1705618516::1707574406::1::::<><>::
+character_body_2d.gd::GDScript::-1::1705664482::0::1::::<>CharacterBody2D<>::
+Player.tscn::PackedScene::761903979221618729::1707574402::0::1::::<><>::uid://t74vldtoni2f::::res://World scenes/Test world/Characters/Animation frog/1téléchargement.jpg<>res://World scenes/Test world/Tests/Chracyter test/PLayer/character_body_2d.gd<>uid://cg5ooh4grdt25::::res://World scenes/Test world/Tests/Objects/Gun/gun.tscn
+::res://World scenes/Test world/Tests/Objects/::1707667813
+::res://World scenes/Test world/Tests/Objects/Gun/::1707667813
+92a.png::CompressedTexture2D::2703668715193336165::1705618608::1707574404::1::::<><>::
+gun.gd::GDScript::-1::1707585108::0::1::::<>Area2D<>::
+gun.tscn::PackedScene::5256781213607838888::1707574402::0::1::::<><>::uid://berxa8hewdn46::::res://World scenes/Test world/Tests/Objects/Gun/92a.png<>res://World scenes/Test world/Tests/Objects/Gun/gun.gd
+::res://World scenes/Test world/Tests/Objects/Gun/Bullet/::1707667813
+1916ed.jpg::CompressedTexture2D::2029270628082562306::1705620620::1707574406::1::::<><>::
+bullet.gd::GDScript::-1::1705665414::0::1::::<>Area2D<>::
+bullet.tscn::PackedScene::5696165606030205539::1707574402::0::1::::<><>::uid://35815eg5px11::::res://World scenes/Test world/Tests/Objects/Gun/Bullet/1916ed.jpg<>res://World scenes/Test world/Tests/Objects/Gun/Bullet/bullet.gd
+::res://World scenes/Test world/Tests/Objects/Tree/::1707667813
+1_uHeNiVgcg08hKTAKWZhLkA.jpeg::CompressedTexture2D::6449323938032726794::1705334616::1707574404::1::::<><>::
+object.tscn::PackedScene::7253633581836962278::1707574402::0::1::::<><>::uid://cx5dom8v8ayna::::res://World scenes/Test world/Tests/Objects/Tree/1_uHeNiVgcg08hKTAKWZhLkA.jpeg
+::res://World scenes/Test world/Tests/World scenes/::1708964820
+CanvasLayer2.gd::GDScript::-1::1708964820::0::1::::<>CanvasLayer<>::
+game_test.gd::GDScript::-1::1708964820::0::1::::<>Node2D<>::
+game_test.tscn::PackedScene::4530313101276285024::1708964820::0::1::::<><>::res://World scenes/Test world/Tests/World scenes/game_test.gd<>uid://k4cpg8ve8tfl::::res://World scenes/Test world/Tests/Chracyter test/PLayer/Player.tscn<>uid://dblyjx3mmpcbe::::res://World scenes/Test world/Tests/Objects/Tree/object.tscn<>uid://plj4mtia4pkw::::res://Menus/Pause_Menu/pause_menu.tscn<>res://World scenes/Test world/Tests/World scenes/CanvasLayer2.gd
+::res://World scenes/Test world/Tiles/::1707667813
+green chill zone - 8x8 AUTUMN.png::CompressedTexture2D::6636924516387175911::1705264230::1707574404::1::::<><>::
+green chill zone - 8x8 screenshot autumn.png::CompressedTexture2D::463481453953482613::1705264230::1707574404::1::::<><>::
+green chill zone - 8x8 screenshot spring.png::CompressedTexture2D::201019566771741123::1705264230::1707574404::1::::<><>::
+green chill zone - 8x8 screenshot summer.png::CompressedTexture2D::925206087574694710::1705264230::1707574404::1::::<><>::
+green chill zone - 8x8 split sample.png::CompressedTexture2D::3409258027321170126::1705264230::1707574404::1::::<><>::
+green chill zone - 8x8 SPRING.png::CompressedTexture2D::2322471650940868056::1705264230::1707574402::1::::<><>::
+green chill zone - 8x8 SUMMER.png::CompressedTexture2D::2045371266592659467::1705264230::1707574402::1::::<><>::
+green chill zone - 8x8 WINTER.png::CompressedTexture2D::4963133199198202517::1705264230::1707574402::1::::<><>::
+::res://World scenes/World 2 scenes/::1705264736
+::res://World scenes/World 3 Scenes/::1705264744

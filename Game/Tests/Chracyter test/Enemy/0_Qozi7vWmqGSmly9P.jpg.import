@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnyg1og5bid7l"
-path="res://.godot/imported/0_Qozi7vWmqGSmly9P.jpg-6b6b3013016b0f111fb149051537a293.ctex"
+path="res://.godot/imported/0_Qozi7vWmqGSmly9P.jpg-bc9bc3c55d2017140d6eaf261fc5c6d2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://World scenes/Test world/Tests/Chracyter test/Enemy/0_Qozi7vWmqGSmly9P.jpg"
-dest_files=["res://.godot/imported/0_Qozi7vWmqGSmly9P.jpg-6b6b3013016b0f111fb149051537a293.ctex"]
+source_file="res://Tests/Chracyter test/Enemy/0_Qozi7vWmqGSmly9P.jpg"
+dest_files=["res://.godot/imported/0_Qozi7vWmqGSmly9P.jpg-bc9bc3c55d2017140d6eaf261fc5c6d2.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cx5dom8v8ayna"
-path="res://.godot/imported/1_uHeNiVgcg08hKTAKWZhLkA.jpeg-3c21b068336f4c1d78a010e75ed39755.ctex"
+path="res://.godot/imported/1_uHeNiVgcg08hKTAKWZhLkA.jpeg-07f086cc177d40d4c0cdde8916e4da2e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://World scenes/Test world/Tests/Objects/Tree/1_uHeNiVgcg08hKTAKWZhLkA.jpeg"
-dest_files=["res://.godot/imported/1_uHeNiVgcg08hKTAKWZhLkA.jpeg-3c21b068336f4c1d78a010e75ed39755.ctex"]
+source_file="res://Tests/Objects/Tree/1_uHeNiVgcg08hKTAKWZhLkA.jpeg"
+dest_files=["res://.godot/imported/1_uHeNiVgcg08hKTAKWZhLkA.jpeg-07f086cc177d40d4c0cdde8916e4da2e.ctex"]
 
 [params]
 
