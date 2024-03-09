@@ -1,3 +1,6 @@
 extends Node
 
-var isRunning: bool
+var isRunning: bool = true
+
+var isInRange: bool = false
+

@@ -1,12 +1,13 @@
+res://Object/Objects/Door
+res://Tiles
+res://Weapons/Guns/MAC-50
+res://
+res://Characters/Playable characters/Ruqi
 res://Tests/Objects
 res://OverWorldCMDS
-res://
 res://Characters/NPC/Humans
 res://OverWorldCMDS/Dialogue
 res://OverWorldCMDS/Interaction
-res://World scenes/World 1 scenes/Level 1
-res://Characters/Playable characters/Ruqi
-res://Tiles
 res://Tests/Objects/Gun
 res://Tests/Chracyter test/Enemy
 res://Tests/World scenes

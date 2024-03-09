@@ -1,0 +1,67 @@
+[gd_scene load_steps=7 format=3 uid="uid://dyrpn2rdjrcaj"]
+
+[ext_resource type="Texture2D" uid="uid://b7qtg7yui4kqc" path="res://Weapons/Guns/MAC-50/MAC-50 spritesheet.png" id="1_agd1g"]
+[ext_resource type="Script" path="res://Weapons/Guns/MAC-50/mac_50.gd" id="2_ysqev"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0nigj"]
+
+[sub_resource type="Animation" id="Animation_8fbey"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PointPivot/Mac-50Spritesheet:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_rasf5"]
+resource_name = "Shoot"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PointPivot/Mac-50Spritesheet:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0374, 0.078, 0.113, 0.1645, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 0, 1, 2, 3, 4]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wyt4m"]
+_data = {
+"RESET": SubResource("Animation_8fbey"),
+"Shoot": SubResource("Animation_rasf5")
+}
+
+[node name="MAC-50" type="Area2D"]
+z_index = -3
+script = ExtResource("2_ysqev")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("CircleShape2D_0nigj")
+
+[node name="PointPivot" type="Marker2D" parent="."]
+
+[node name="Mac-50Spritesheet" type="Sprite2D" parent="PointPivot"]
+texture_filter = 1
+position = Vector2(36, 0)
+texture = ExtResource("1_agd1g")
+hframes = 5
+
+[node name="FirePoint" type="Marker2D" parent="PointPivot/Mac-50Spritesheet"]
+position = Vector2(21, -6)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_wyt4m")
+}

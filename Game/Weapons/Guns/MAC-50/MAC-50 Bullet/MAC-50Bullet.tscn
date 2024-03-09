@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://cnfjarx11wa16"]
+
+[ext_resource type="Script" path="res://Weapons/Guns/MAC-50/MAC-50 Bullet/Mac-50_Bullet.gd" id="1_q283t"]
+[ext_resource type="Texture2D" uid="uid://yewq66llpbx5" path="res://Weapons/Guns/MAC-50/MAC-50 Bullet/Bullet MAC-50.png" id="2_nx2dp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nse34"]
+radius = 4.99791
+height = 25.9974
+
+[node name="Bullet" type="Area2D"]
+top_level = true
+rotation = 0.00123664
+scale = Vector2(0.68151, 0.73407)
+collision_layer = 0
+collision_mask = 3
+script = ExtResource("1_q283t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 1)
+rotation = -1.55659
+shape = SubResource("CapsuleShape2D_nse34")
+
+[node name="BulletMac-50" type="Sprite2D" parent="CollisionShape2D"]
+texture_filter = 1
+position = Vector2(0.0142002, 0.999893)
+rotation = 1.55659
+texture = ExtResource("2_nx2dp")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

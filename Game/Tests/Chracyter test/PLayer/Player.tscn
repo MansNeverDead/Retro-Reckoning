@@ -1,8 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://k4cpg8ve8tfl"]
 
-[ext_resource type="Texture2D" uid="uid://t74vldtoni2f" path="res://World scenes/Test world/Characters/Animation frog/1téléchargement.jpg" id="1_b1ow0"]
+[ext_resource type="Texture2D" uid="uid://t74vldtoni2f" path="res://Tests/Test world/Characters/Animation frog/1téléchargement.jpg" id="1_b1ow0"]
 [ext_resource type="Script" path="res://Tests/Chracyter test/PLayer/character_body_2d.gd" id="1_yeldr"]
-[ext_resource type="PackedScene" uid="uid://cg5ooh4grdt25" path="res://World scenes/Test world/Tests/Objects/Gun/gun.tscn" id="3_7vlqw"]
+[ext_resource type="PackedScene" uid="uid://cg5ooh4grdt25" path="res://Tests/Test world/Tests/Objects/Gun/gun.tscn" id="3_7vlqw"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x6jy0"]
 size = Vector2(60, 47)

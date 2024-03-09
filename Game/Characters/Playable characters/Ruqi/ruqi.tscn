@@ -1,46 +1,54 @@
-[gd_scene load_steps=5 format=3 uid="uid://c4shlrtelach"]
+[gd_scene load_steps=9 format=3 uid="uid://c4shlrtelach"]
 
 [ext_resource type="Script" path="res://Characters/Playable characters/Ruqi/ruqi.gd" id="1_7vth0"]
-[ext_resource type="Texture2D" uid="uid://baug6r5uf7lc5" path="res://Characters/Playable characters/Ruqi/Untitled3_20230617145637.png" id="1_imemr"]
+[ext_resource type="Shape2D" uid="uid://d01pyr8je3xa8" path="res://Characters/Playable characters/Ruqi/standing.tres" id="3_e6h07"]
+[ext_resource type="Texture2D" uid="uid://bwdbe4tal3jk2" path="res://Characters/Playable characters/Ruqi/pixil-frame-0.png" id="3_g7w2m"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3utg2"]
-size = Vector2(147.976, 87.9973)
+[sub_resource type="Animation" id="Animation_y2b3y"]
+length = 0.001
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_po4i8"]
-radius = 104.785
+[sub_resource type="Animation" id="Animation_ge80h"]
+resource_name = "crouch_walk"
+
+[sub_resource type="Animation" id="Animation_x5xo2"]
+resource_name = "crouching"
+loop_mode = 1
+
+[sub_resource type="Animation" id="Animation_nlo8l"]
+resource_name = "standing"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mn2kj"]
+_data = {
+"RESET": SubResource("Animation_y2b3y"),
+"crouch_walk": SubResource("Animation_ge80h"),
+"crouching": SubResource("Animation_x5xo2"),
+"standing": SubResource("Animation_nlo8l")
+}
 
 [node name="Ruqi" type="CharacterBody2D" groups=["player"]]
 editor_description = "Layer determines what  can detect me
 
 mask determine what i can detect"
-position = Vector2(-550, -357)
+position = Vector2(1, -1)
 collision_layer = 2
 collision_mask = 225
 script = ExtResource("1_7vth0")
 
-[node name="Untitled320230617145637" type="Sprite2D" parent="."]
-position = Vector2(559, 323)
-scale = Vector2(0.162109, 0.173828)
-texture = ExtResource("1_imemr")
-
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="."]
-position = Vector2(549.017, 363.865)
+position = Vector2(-1, 0)
 rotation = 1.57857
-shape = SubResource("RectangleShape2D_3utg2")
+scale = Vector2(1.86912, 2.85316)
+shape = ExtResource("3_e6h07")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(554, 331)
+position = Vector2(1, 0)
 
-[node name="detection_area" type="Area2D" parent="."]
-light_mask = 4
-visibility_layer = 4
-collision_layer = 0
-collision_mask = 4
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_mn2kj")
+}
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="detection_area"]
-position = Vector2(547, 364)
-shape = SubResource("CircleShape2D_po4i8")
-debug_color = Color(0.956863, 0, 0.533333, 0.419608)
-
-[connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
-[connection signal="body_exited" from="detection_area" to="." method="_on_detection_area_body_exited"]
+[node name="Pixil-frame-0" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(8, -10)
+texture = ExtResource("3_g7w2m")

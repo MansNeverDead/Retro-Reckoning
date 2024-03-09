@@ -1,0 +1,87 @@
+[gd_scene load_steps=6 format=3 uid="uid://curktqu00e0h5"]
+
+[ext_resource type="Texture2D" uid="uid://b7qtg7yui4kqc" path="res://Weapons/Guns/MAC-50/MAC-50 spritesheet.png" id="1_agd1g"]
+[ext_resource type="Script" path="res://Weapons/Guns/MAC-50/mac_50.gd" id="2_ysqev"]
+
+[sub_resource type="Animation" id="Animation_quue4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:hframes")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [5]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_pf7gd"]
+resource_name = "Shoot"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:hframes")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [5]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0746, 0.1596, 0.2406, 0.3491),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 2, 3, 4, 4]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ta7gw"]
+_data = {
+"RESET": SubResource("Animation_quue4"),
+"Shoot": SubResource("Animation_pf7gd")
+}
+
+[node name="Mac-50" type="Sprite2D"]
+texture_filter = 1
+position = Vector2(91, 69)
+texture = ExtResource("1_agd1g")
+hframes = 5
+script = ExtResource("2_ysqev")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ta7gw")
+}
+
+[node name="fire" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(17, -6)
+
+[node name="Weapon Pivot" type="Marker2D" parent="."]
+position = Vector2(-35, -5)
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
