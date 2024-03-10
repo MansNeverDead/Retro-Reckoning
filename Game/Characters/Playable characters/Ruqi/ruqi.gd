@@ -1,64 +1,81 @@
 extends CharacterBody2D
+class_name Player
 
-const jumpPower = -2000.0
-const SPEED = 300.0
+@onready var AnimPlayer = $AnimationPlayer
+@onready var PlayerSprite = $PlayerSprite
 
-const friction = 70
+@export var SPEED = 300.0
+@export var JUMP_VELOCITY = -400.0
+@export var RUN_SPEED = 400.0
+@export var WALL_JUMP_PUSHBACK = 155
 
-const JUMP_VELOCITY = -400.0
-const wall_jump_pushback: int = 200
-const wall_slide_gravity = 155
+var can_move = true
+var can_jump = true
 var is_wall_sliding = false
-var _isInRange = false
-var gravity = 150
 
-var inventory: Array = []
 
-const DialogueSettings = preload("res://addons/dialogue_manager/settings.gd")
-@onready var title: String = DialogueSettings.get_user_value("run_title")
-@onready var resource: DialogueResource = load(DialogueSettings.get_user_value("run_resource_path"))
-
-var standingPre = preload("res://Characters/Playable characters/Ruqi/standing.tres")
-var crouching = preload("res://Characters/Playable characters/Ruqi/crouching.tres")
-
+@export var WALL_JUMP_GRAVITY = 200
+var gravity = 980
 
 
 func _physics_process(delta):
+	# Add the gravity.
+	if not is_on_floor():
+		velocity.y += gravity * delta
+		can_jump = false
+	if is_on_floor():
+		can_jump = true
+	if is_on_floor() and velocity == Vector2(0,0):
+		pass
+			#AnimPlayer.play(play idle animation)
+			
+	move()
+	jump()
+	wallSlide(delta)
+	move_and_slide()
+
+func move():
 	
 	var direction = Input.get_axis("left", "right")
+
+	#moving and changing players sprite direction
 	if direction:
 		velocity.x = direction * SPEED
 	else:
-		add_friction()
-	move_and_slide()
-	running()
-	
-	jump()
-	
-	wallSlide(delta)
-
-func add_friction():
-	velocity = velocity.move_toward(Vector2.ZERO, friction)
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+	if direction == 1:
+		PlayerSprite.flip_h = false
+	if direction == -1:
+		PlayerSprite.flip_h = true
+		
+	if can_move == false:
+		velocity.x = 0
+		
+	#running
+	if Input.is_action_pressed("sprint"):
+		velocity.x = RUN_SPEED * direction
 
 func jump():
-	velocity.y += gravity
-	if Input.is_action_just_pressed("jump"):
-		if is_on_floor():
-			velocity.y = jumpPower - 10
+	if Input.is_action_just_pressed("jump") and can_move and can_jump:
+		velocity.y = JUMP_VELOCITY
+		#if is_on_floor():
+			#AnimPlayer.play("idle animation")
+	if can_move == false:
+		velocity.y = 0
 		
 		if is_on_wall() and Input.is_action_pressed("left"):
 			gravity = 115
-			velocity.y = jumpPower
-			velocity.x = wall_jump_pushback
+			velocity.y = JUMP_VELOCITY
+			velocity.x = WALL_JUMP_PUSHBACK
 		else:
-			gravity = 150
+			gravity = 980
 		
 		if is_on_wall() and Input.is_action_pressed("right"):
 			gravity = 115
-			velocity.y = jumpPower
-			velocity.x = -wall_jump_pushback
+			velocity.y = JUMP_VELOCITY
+			velocity.x = -WALL_JUMP_PUSHBACK
 		else:
-			gravity = 150
+			gravity = 980
 
 func wallSlide(delta):
 	if is_on_wall() and !is_on_floor():
@@ -69,18 +86,6 @@ func wallSlide(delta):
 	else:
 		is_wall_sliding = false
 		
-	
 	if is_wall_sliding:
-		velocity.y += (wall_slide_gravity * delta)
-		velocity.y = min(velocity.y, wall_slide_gravity)
-
-func running():
-	var direction = Input.get_axis("left", "right")
-	if Input.is_action_pressed("sprint"):
-		if Input.is_action_pressed("jump") == false:
-			if direction:
-				velocity.x = direction * SPEED / 2.5
-				move_and_slide()
-			else:
-				add_friction()
-			move_and_slide()
+		velocity.y += (WALL_JUMP_GRAVITY * delta)
+		velocity.y = min(velocity.y, WALL_JUMP_GRAVITY)
