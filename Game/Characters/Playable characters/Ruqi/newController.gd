@@ -1,5 +1,5 @@
 extends CharacterBody2D
-class_name Player
+class_name Ruqi
 
 @onready var AnimPlayer = $AnimationPlayer
 @onready var PlayerSprite = $PlayerSprite
@@ -68,14 +68,14 @@ func jump():
 			velocity.y = JUMP_VELOCITY
 			velocity.x = WALL_JUMP_PUSHBACK
 		else:
-			gravity = 980
+			gravity = 150
 		
 		if is_on_wall() and Input.is_action_pressed("right"):
 			gravity = 115
 			velocity.y = JUMP_VELOCITY
 			velocity.x = -WALL_JUMP_PUSHBACK
 		else:
-			gravity = 980
+			gravity = 150
 
 func wallSlide(delta):
 	if is_on_wall() and !is_on_floor():
