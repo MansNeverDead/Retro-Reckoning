@@ -1,4 +1,5 @@
 extends CharacterBody2D
+
 class_name Player
 
 @onready var AnimPlayer = $AnimationPlayer
@@ -34,6 +35,12 @@ func _physics_process(delta):
 	wallSlide(delta)
 	move_and_slide()
 
+func _ready():
+	pass
+
+func _on_spawn(position: Vector2, _direction: String):
+	global_position = position
+
 func move():
 	
 	var direction = Input.get_axis("left", "right")
@@ -68,14 +75,14 @@ func jump():
 			velocity.y = JUMP_VELOCITY
 			velocity.x = WALL_JUMP_PUSHBACK
 		else:
-			gravity = 980
+			gravity = 150
 		
 		if is_on_wall() and Input.is_action_pressed("right"):
 			gravity = 115
 			velocity.y = JUMP_VELOCITY
 			velocity.x = -WALL_JUMP_PUSHBACK
 		else:
-			gravity = 980
+			gravity = 150
 
 func wallSlide(delta):
 	if is_on_wall() and !is_on_floor():

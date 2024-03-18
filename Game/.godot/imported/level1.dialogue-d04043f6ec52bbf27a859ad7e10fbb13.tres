@@ -1,0 +1,69 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_yy4pe"]
+
+[resource]
+script = ExtResource("1_yy4pe")
+using_states = PackedStringArray()
+titles = {
+"this_is_a_node_title": "3"
+}
+character_names = PackedStringArray("Ruqi")
+first_title = "3"
+lines = {
+"1": {
+"id": "1",
+"next_id": "3",
+"text": "this_is_a_node_title",
+"type": "title"
+},
+"3": {
+"character": "Ruqi",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Oh[speed=0.1] oh no no no.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Oh[speed=0.1] oh no no no.",
+"type": "dialogue"
+},
+"4": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "[next=auto]",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[next=auto]",
+"type": "dialogue"
+},
+"5": {
+"character": "Ruqi",
+"character_replacements": Array[Dictionary]([]),
+"id": "5",
+"next_id": "6",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "among us",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "among us",
+"type": "dialogue"
+},
+"6": {
+"id": "6",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+}
+}
+raw_text = "~ this_is_a_node_title
+
+Ruqi: Oh[speed=0.1] oh no no no.
+[next=auto]
+Ruqi: among us
+=> END"
+metadata/dialogue_manager_version = "2.34.0"

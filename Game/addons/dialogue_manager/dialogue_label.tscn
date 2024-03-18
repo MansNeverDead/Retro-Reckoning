@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://ckvgyvclnwggo"]
 
 [ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_label.gd" id="1_cital"]
-[ext_resource type="FontFile" uid="uid://benn87nj72ej1" path="res://OverWorldCMDS/Dialogue/m6x11.ttf" id="1_m0hy6"]
+[ext_resource type="FontFile" uid="uid://benn87nj72ej1" path="res://OverWorldCMDS/Dialogue/Normal.ttf" id="1_m0hy6"]
 
 [node name="DialogueLabel" type="RichTextLabel"]
 anchors_preset = 10

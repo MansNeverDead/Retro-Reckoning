@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cxbbjwaklrbco"]
 
 [ext_resource type="Script" path="res://OverWorldCMDS/Interaction/interactionManager.gd" id="1_immqs"]
-[ext_resource type="FontFile" uid="uid://j1lekypt68d4" path="res://OverWorldCMDS/Dialogue/Stacked pixel.ttf" id="1_y3l6v"]
+[ext_resource type="FontFile" uid="uid://j1lekypt68d4" path="res://OverWorldCMDS/Dialogue/Blocky.ttf" id="1_y3l6v"]
 
 [node name="interactionManager" type="Node2D"]
 z_index = -20

@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://c4shlrtelach"]
 
-[ext_resource type="Script" path="res://Characters/Playable characters/Ruqi/newController.gd" id="1_snndl"]
+[ext_resource type="Script" path="res://Characters/Playable characters/Ruqi/Ruqi.gd" id="1_tuxsu"]
 [ext_resource type="Shape2D" uid="uid://d01pyr8je3xa8" path="res://Characters/Playable characters/Ruqi/standing.tres" id="3_e6h07"]
 [ext_resource type="Texture2D" uid="uid://bwdbe4tal3jk2" path="res://Characters/Playable characters/Ruqi/pixil-frame-0.png" id="3_g7w2m"]
 
@@ -32,7 +32,7 @@ mask determine what i can detect"
 position = Vector2(1, -1)
 collision_layer = 2
 collision_mask = 225
-script = ExtResource("1_snndl")
+script = ExtResource("1_tuxsu")
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 0)

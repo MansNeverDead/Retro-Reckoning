@@ -1,11 +1,12 @@
+res://OverWorldCMDS/Dialogue/DialogueArea
+res://OverWorldCMDS/TransitionToNewScene
+res://
 res://Object/Objects/Door
 res://Tiles
 res://Weapons/Guns/MAC-50
-res://
 res://Characters/Playable characters/Ruqi
 res://Tests/Objects
 res://OverWorldCMDS
-res://Characters/NPC/Humans
 res://OverWorldCMDS/Dialogue
 res://OverWorldCMDS/Interaction
 res://Tests/Objects/Gun

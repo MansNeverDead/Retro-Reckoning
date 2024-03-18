@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://benn87nj72ej1"
-path="res://.godot/imported/m6x11.ttf-416721407523081756d031afefce00e6.fontdata"
+uid="uid://j1lekypt68d4"
+path="res://.godot/imported/Blocky.ttf-5f27fc8912c83ce176b82b728308bd4c.fontdata"
 
 [deps]
 
-source_file="res://OverWorldCMDS/Dialogue/m6x11.ttf"
-dest_files=["res://.godot/imported/m6x11.ttf-416721407523081756d031afefce00e6.fontdata"]
+source_file="res://OverWorldCMDS/Dialogue/Blocky.ttf"
+dest_files=["res://.godot/imported/Blocky.ttf-5f27fc8912c83ce176b82b728308bd4c.fontdata"]
 
 [params]
 

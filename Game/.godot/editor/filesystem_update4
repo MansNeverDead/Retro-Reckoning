@@ -1,10 +1,29 @@
+res://node_2d.tscn
+res://node_2d.gd
+res://OverWorldCMDS/TransitionToNewScene/DoorManager.gd
 res://World scenes/World 1 scenes/Level 1/level_1_solo.tscn
 res://Characters/Playable characters/Ruqi/ruqi.tscn
+res://Characters/Playable characters/Ruqi/Ruqi.gd
 res://OverWorldCMDS/Menus/Story Mode/story_mode.tscn
 res://addons/dialogue_manager/dialogue_label.tscn
 res://Weapons/Guns/MAC-50/MAC-50 Bullet/MAC-50Bullet.tscn
 res://Weapons/Guns/MAC-50/mac_50.tscn
 res://Tiles/Foreground.tscn
 res://Tiles/background.tscn
-res://Object/Objects/Door/DoorTEST.tscn
-res://Object/Objects/Door/doorCollisionShapeClose.tscn
+res://OverWorldCMDS/TransitionToNewScene/door_to_new_scene.tscn
+res://OverWorldCMDS/TransitionToNewScene/door_to_new_scene.gd
+res://OverWorldCMDS/Interaction/interactionArea/interactionArea.gd
+res://OverWorldCMDS/Interaction/interactionManager.gd
+res://dontWorryAboutThis/node_2d.tscn
+res://OverWorldCMDS/Dialogue/DialogueArea/DialogueArea.tscn
+res://OverWorldCMDS/Dialogue/DialogueArea/DialogueArea.gd
+res://OverWorldCMDS/Dialogue/DialogueArea/DialogueAREAManager.gd
+res://addons/dialogue_manager/test_scene.tscn
+res://addons/dialogue_manager/example_balloon/small_example_balloon.tscn
+res://addons/dialogue_manager/views/main_view.tscn
+res://addons/dialogue_manager/views/settings_view.tscn
+res://addons/dialogue_manager/example_balloon/example_balloon.tscn
+res://addons/dialogue_manager/components/update_button.tscn
+res://addons/dialogue_manager/components/title_list.tscn
+res://addons/dialogue_manager/components/search_and_replace.tscn
+res://addons/dialogue_manager/components/files_list.tscn
