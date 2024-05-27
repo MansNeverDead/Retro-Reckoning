@@ -1,3 +1,4 @@
+Marker2D
 AnimationPlayer
 AnimationTree
 CollisionShape2D
@@ -10,5 +11,4 @@ Label
 Camera2D
 RayCast2D
 Node
-Marker2D
 TileMap
