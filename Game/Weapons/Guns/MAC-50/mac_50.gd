@@ -4,7 +4,7 @@ var doneShooting: bool = true
 
 @onready var animationPlayer = $AnimationPlayer
 @onready var gun = $"."
-
+var direction = Input.is_action_pressed("up") or Input.is_action_pressed("left") or Input.is_action_pressed("right")
 
 
 
@@ -13,8 +13,7 @@ func _physics_process(_delta):
 		print("Shoot has been initiated")
 		shoot()
 	# Handle input for movement
-	
-	move_and_rotate_gun(Input.is_action_pressed("up") ||Input.is_action_pressed("left") ||Input.is_action_pressed("right"))
+	rotateGun(direction)
 	
 func shoot():
 	animationPlayer.play("Shoot")
@@ -24,7 +23,7 @@ func shoot():
 	new_bullet.global_rotation = $"PointPivot/Mac-50Spritesheet/FirePoint".global_rotation
 	$"PointPivot/Mac-50Spritesheet/FirePoint".add_child(new_bullet)
 
-func move_and_rotate_gun(_direction):
+func rotateGun(_direction):
 	# Define the target position and rotation for the gun based on the direction
 	var target_position = Vector2.ZERO
 	var target_rotation = 0.0
@@ -43,7 +42,3 @@ func move_and_rotate_gun(_direction):
 	gun.position = target_position
 	gun.rotation_degrees = target_rotation
 
-"""
-Name: idk
-desc Ion know either
-"""

@@ -1,6 +1,6 @@
 extends Node
 
-const houseScene1 = preload("res://World scenes/World 1 scenes/Level 1/level_1_solo.tscn")
+const houseScene1 = preload("res://World scenes/World 1 scenes/Level 1/Part1 InsideHouse/level_1_solo.tscn")
 const level1Scene2TEST = preload("res://dontWorryAboutThis/node_2d.tscn")
 
 var spawn_door_tag
@@ -15,6 +15,8 @@ func go_to_level(level_tag, destination_tag):
 			scene_to_load = level1Scene2TEST
 		
 	if scene_to_load != null:
-			spawn_door_tag = destination_tag
-			get_tree().change_scene_to_packed(scene_to_load)
+		FadingEffect.transition()
+		await  FadingEffect.animationFinishedPlaying
+		spawn_door_tag = destination_tag
+		get_tree().change_scene_to_packed(scene_to_load)
 

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://ctoxcqngogiea"]
+
+[ext_resource type="Texture2D" uid="uid://cqfpsx04m0ctd" path="res://Weapons/Knifes/Kitchen Knife/PIXEL_ART_KNIFE.webp" id="1_20qil"]
+[ext_resource type="Script" path="res://Weapons/Knifes/Kitchen Knife/Knife.gd" id="1_mlv3b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y1mce"]
+size = Vector2(19, 6)
+
+[node name="Kitchen Knife" type="Area2D"]
+script = ExtResource("1_mlv3b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3.5, 2)
+shape = SubResource("RectangleShape2D_y1mce")
+
+[node name="PixelArtKnife" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-2, 0)
+texture = ExtResource("1_20qil")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

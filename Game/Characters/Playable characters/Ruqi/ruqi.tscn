@@ -30,8 +30,8 @@ editor_description = "Layer determines what  can detect me
 
 mask determine what i can detect"
 position = Vector2(1, -1)
-collision_layer = 2
-collision_mask = 225
+collision_layer = 34
+collision_mask = 193
 script = ExtResource("1_tuxsu")
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="."]

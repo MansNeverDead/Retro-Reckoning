@@ -19,10 +19,10 @@ func _physics_process(delta):
 # point and than also makes sure that it stays connected on the player
 # and than creates an instance of the pullet as a child of the gun
 func shoot():
-	const BULLET = preload("res://Tests/Objects/Gun/Bullet/bullet.tscn")
-	var new_bullet = BULLET.instantiate()
+	# const BULLET = preload("res://Tests/Objects/Gun/Bullet/bullet.tscn")
+	"""var new_bullet = BULLET.instantiate()
 	new_bullet.global_position = %shooting_point.global_position
 	new_bullet.global_rotation = %shooting_point.global_rotation
-	%shooting_point.add_child(new_bullet)
+	%shooting_point.add_child(new_bullet)"""
 	
 

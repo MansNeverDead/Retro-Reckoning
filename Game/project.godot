@@ -21,6 +21,7 @@ InteractionManager="*res://OverWorldCMDS/Interaction/interactionManager.tscn"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 GlobalVariables="*res://OverWorldCMDS/globalVariables.gd"
 DoorManager="*res://OverWorldCMDS/TeleportToNewScene/DoorManager.gd"
+FadingEffect="*res://OverWorldCMDS/TeleportToNewScene/FadingEffect/FadingEffect.tscn"
 
 [editor_plugins]
 
@@ -89,7 +90,7 @@ crouch={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://World scenes/World 1 scenes/Level 1/Part1 InsideHouse/level1.dialogue")
+locale/translations_pot_files=PackedStringArray("res://World scenes/World 1 scenes/Level 1/level1.dialogue")
 
 [layer_names]
 
