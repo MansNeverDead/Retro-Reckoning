@@ -1,16 +1,19 @@
+class_name Hitbox
 extends Node2D
+
 const attackDamage = 5
 const knockback = 100
 var direction = Input.is_action_pressed("up") or Input.is_action_pressed("left") or Input.is_action_pressed("right") 
 @onready var weapon = $"."
-@onready var animationPlayer = $"AnimationPlayer"
+@onready var animationPlayer = $AnimationPlayer;
 
 func _physics_process(delta):
 	rotateWeapon(direction)
 	
-	if Input.is_action_just_pressed("Shoot"):
-		animationPlayer.play("Attack")
-	
+	if Input.is_action_pressed("Shoot"):
+		animationPlayer.play("attack")
+	else:
+		animationPlayer.play("RESET")
 
 
 
@@ -35,15 +38,12 @@ func rotateWeapon(_direction):
 	weapon.position = target_position
 	weapon.rotation_degrees = target_rotation
 
-func _on_body_entered(body):
+
+
+func _on_area_2d_body_entered(body):
 	if body.has_method("takeDamage"):
 		var attack = Damage.new()
 		attack.attackDamage = attackDamage
 		attack.knockback = knockback
 		attack.attackPosition = global_position
 		body.takeDamage(Damage)
-
-
-
-func _on_animation_player_animation_finished(anim_name):
-	animationPlayer.play('RESET')

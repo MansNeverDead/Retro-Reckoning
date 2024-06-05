@@ -37,10 +37,10 @@ tracks/2/path = NodePath("CollisionShape2D:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0.1, 0.4),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, true, false]
+"values": [true, true]
 }
 
 [sub_resource type="Animation" id="Animation_1a2u7"]
@@ -114,4 +114,3 @@ position = Vector2(4, 1)
 shape = SubResource("RectangleShape2D_o1b6a")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
-[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

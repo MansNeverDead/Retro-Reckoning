@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cohlimiyqkmbq" path="res://Tiles/Foreground.tscn" id="1_as7ew"]
 [ext_resource type="PackedScene" uid="uid://c4shlrtelach" path="res://Characters/Playable characters/Ruqi/ruqi.tscn" id="2_fdorh"]
 [ext_resource type="PackedScene" uid="uid://dpl5fyel3lwv0" path="res://Tiles/background.tscn" id="3_qv2bq"]
-[ext_resource type="PackedScene" uid="uid://dyrpn2rdjrcaj" path="res://Weapons/Guns/MAC-50/mac_50.tscn" id="4_kw6fp"]
+[ext_resource type="PackedScene" uid="uid://ctoxcqngogiea" path="res://Weapons/Knifes/Kitchen Knife/knife.tscn" id="4_fhplv"]
 
 [node name="Level 1 Solo" type="Node2D"]
 position = Vector2(8, -1)
@@ -18,5 +18,4 @@ layer_0/tile_data = PackedInt32Array(1376316, 131073, 2, 1310780, 131073, 2, 124
 [node name="Ruqi" parent="." instance=ExtResource("2_fdorh")]
 position = Vector2(491, 691)
 
-[node name="MAC-50" parent="Ruqi" instance=ExtResource("4_kw6fp")]
-position = Vector2(2, -18)
+[node name="Kitchen Knife" parent="Ruqi" instance=ExtResource("4_fhplv")]
