@@ -11,7 +11,7 @@ func _physics_process(delta):
 	
 	# i forgot what this did again but bassicaly when shot from the gun it makes sure that it is 
 	# rotated correctly and than gets created
-	var direction = Vector2.RIGHT.rotated(rotate())
+	# var direction = Vector2.RIGHT.rotate()
 	position += direction * SPEED * delta
 	
 	# here when the traveled distances ir more than the allowed range it gets destroyed

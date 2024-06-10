@@ -1,10 +1,9 @@
-extends CharacterBody2D
+class_name Player extends CharacterBody2D
 
-class_name Player
-
-@onready var AnimPlayer = $AnimationPlayer
+@export var Inv: inventory
+@onready var weapon = $weapon
+@onready var animationPlayer = $AnimationPlayer
 @onready var PlayerSprite = $PlayerSprite
-
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 const RUN_SPEED = 400.0
@@ -13,6 +12,7 @@ const WALL_SLIDE_GRAVITY = 350
 var can_move = true
 var gravity = 980
 var wallSliding = false
+var lastDirection
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -20,8 +20,17 @@ func _physics_process(delta):
 		velocity.y += gravity * delta
 	move()
 	jump()
-	move_and_slide()
+	
 	wallslide(delta)
+	if Input.is_action_pressed("Shoot"):
+		if lastDirection == 'left':
+			weapon.scale.x = -1
+			animationPlayer.play("attackLeft")
+			weapon.scale.x = 1
+		elif lastDirection == 'right':
+			
+			animationPlayer.play("attackRight")
+	move_and_slide()
 
 func _ready():
 	pass
@@ -30,9 +39,7 @@ func _on_spawn(position: Vector2, _direction: String):
 	global_position = position
 
 func move():
-	
 	var direction = Input.get_axis("left", "right")
-
 	#moving and changing players sprite direction
 	if direction:
 		velocity.x = direction * SPEED
@@ -40,12 +47,13 @@ func move():
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 	if direction == 1:
 		PlayerSprite.flip_h = false
+		lastDirection = "right"
 	if direction == -1:
 		PlayerSprite.flip_h = true
-		
+		lastDirection = "left"
 	if can_move == false:
 		velocity.x = 0
-		
+	
 	#running
 	if Input.is_action_pressed("sprint"):
 		velocity.x = RUN_SPEED * direction
@@ -55,7 +63,7 @@ func jump():
 		if is_on_floor():
 			velocity.y = JUMP_VELOCITY
 			#if is_on_floor():
-				#AnimPlayer.play("idle animation")
+				#.play("idle animation")
 		if Input.is_action_pressed("left")  && is_on_wall():
 			velocity.y = JUMP_VELOCITY
 			velocity.x = WALL_JUMP_PUSHBACK

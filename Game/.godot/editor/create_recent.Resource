@@ -1,0 +1,3 @@
+inventory
+inventoryItem
+Resource

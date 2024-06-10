@@ -1,47 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://ctoxcqngogiea"]
+[gd_scene load_steps=8 format=3 uid="uid://ctoxcqngogiea"]
 
 [ext_resource type="Texture2D" uid="uid://cqfpsx04m0ctd" path="res://Weapons/Knifes/Kitchen Knife/PIXEL_ART_KNIFE.webp" id="1_20qil"]
 [ext_resource type="Script" path="res://Weapons/Knifes/Kitchen Knife/Knife.gd" id="1_mlv3b"]
-
-[sub_resource type="Animation" id="Animation_4c8ii"]
-resource_name = "Attack"
-length = 0.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 0,
-"values": [0.0, -0.705113, -1.5516, -0.933751, 0.0]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(16, 0), Vector2(16, -6), Vector2(0, -27), Vector2(19, -26), Vector2(32, 0), Vector2(0, 0)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("CollisionShape2D:visible")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [false, true, true, false]
-}
 
 [sub_resource type="Animation" id="Animation_1a2u7"]
 length = 0.001
@@ -81,15 +41,108 @@ tracks/2/keys = {
 "update": 1,
 "values": [false]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = false
+tracks/3/path = NodePath("PixelArtKnife:flip_h")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_d0uvh"]
+resource_name = "attackLeft"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(23, 1), Vector2(21, 1), Vector2(47, 1), Vector2(44, 1), Vector2(35, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PixelArtKnife:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CollisionShape2D:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [false, true, true, false]
+}
+
+[sub_resource type="Animation" id="Animation_obkyw"]
+resource_name = "attackRight"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PixelArtKnife:flip_h")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(16, 0), Vector2(29, 1), Vector2(44, 1), Vector2(23, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CollisionShape2D:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [false, true, true, false]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nd8lb"]
 _data = {
-"Attack": SubResource("Animation_4c8ii"),
-"RESET": SubResource("Animation_1a2u7")
+"RESET": SubResource("Animation_1a2u7"),
+"attackLeft": SubResource("Animation_d0uvh"),
+"attackRight": SubResource("Animation_obkyw")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o1b6a"]
-size = Vector2(20, 7)
+size = Vector2(18.1644, 7)
 
 [node name="Kitchen Knife" type="Area2D"]
 position = Vector2(16, 0)
@@ -100,17 +153,14 @@ libraries = {
 "": SubResource("AnimationLibrary_nd8lb")
 }
 
-[node name="Marker2D" type="Marker2D" parent="."]
-position = Vector2(-32, 0)
-
 [node name="PixelArtKnife" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-2, 0)
+position = Vector2(23, 0)
 texture = ExtResource("1_20qil")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
-position = Vector2(4, 1)
+position = Vector2(29, 2)
 shape = SubResource("RectangleShape2D_o1b6a")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,16 +1,12 @@
-res://World scenes/World 1 scenes/Level 1/Part1 InsideHouse/level_1_solo.tscn
 res://Characters/Playable characters/Ruqi/ruqi.tscn
+res://OverWorldCMDS/Inventory/inventoryItem.gd
+res://Characters/Playable characters/Ruqi/Ruqi.gd
 res://OverWorldCMDS/Menus/Story Mode/story_mode.tscn
+res://World scenes/World 1 scenes/Level 1/Part1 InsideHouse/level_1_solo.tscn
 res://Weapons/Guns/MAC-50/MAC-50 Bullet/MAC-50Bullet.tscn
 res://Weapons/Guns/MAC-50/mac_50.tscn
 res://World scenes/World 1 scenes/Level 1/Part1 InsideHouse/lvl_1_scene_2.tscn
 res://World scenes/World 1 scenes/Level 1/Part 2 InStairways/Stairway.tscn
-res://World scenes/World 1 scenes/Level 1/Part3 Outside/outside_apartment.tscn
-res://dontWorryAboutThis/node_2d.tscn
 res://Weapons/Knifes/Kitchen Knife/knife.tscn
-res://Tests/Objects/Gun/gun.tscn
-res://Weapons/Knifes/Kitchen Knife/Knife.gd
-res://OverWorldCMDS/Damage/Damage.gd
 res://Tests/Test world/Tests/Objects/Gun/gun.tscn
-res://Weapons/Knifes/Kitchen Knife/kitchenKnife.gd
-res://Weapons/Knifes/Kitchen Knife/kitchen_knife.tscn
+res://animated_sprite_2d.tscn

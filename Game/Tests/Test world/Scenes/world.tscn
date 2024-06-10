@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=3 uid="uid://byc64wkamj5xf"]
 
-[ext_resource type="Texture2D" uid="uid://botp8m0ikyqwc" path="res://Tests/Test world/Tiles/green chill zone - 8x8 split sample.png" id="1_unvi4"]
+[ext_resource type="Texture2D" uid="uid://botp8m0ikyqwc" path="res://Tiles/PNG/green chill zone - 8x8 split sample.png" id="1_unvi4"]
 [ext_resource type="Texture2D" uid="uid://nggakrgxuexi" path="res://Tests/Test world/Tiles/green chill zone - 8x8 screenshot summer.png" id="2_vkmlu"]
-[ext_resource type="Texture2D" uid="uid://8da1ex45mbm3" path="res://Tests/Test world/Tiles/green chill zone - 8x8 SPRING.png" id="3_di3bt"]
+[ext_resource type="Texture2D" uid="uid://8da1ex45mbm3" path="res://Tiles/PNG/green chill zone - 8x8 SPRING.png" id="3_di3bt"]
 [ext_resource type="Script" path="res://Tests/Test world/Scripts/testing_BALLS.gd" id="4_ukxy5"]
 [ext_resource type="Texture2D" uid="uid://ccppd3iwt1fag" path="res://Tests/Test world/Characters/Animation frog/téléchargement.jpg" id="5_awsn1"]
 

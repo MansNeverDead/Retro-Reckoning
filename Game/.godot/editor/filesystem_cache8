@@ -1,5 +1,6 @@
 3acdcc5cb6df755358dde907981ccea8
-::res://::1717544250
+::res://::1718047400
+animated_sprite_2d.tscn::PackedScene::4780959513867784319::1718043044::0::1::::<><>::uid://cnyg1og5bid7l::::res://Tests/Test world/Tests/Chracyter test/Enemy/0_Qozi7vWmqGSmly9P.jpg
 export_presets.cfg::TextFile::-1::1710060060::0::1::::<><>::
 function_library.gd::GDScript::-1::1710060060::0::1::::<>Node<>::
 icon.svg::CompressedTexture2D::3461408215310631084::1710060060::1710075299::1::::<><>::
@@ -80,19 +81,19 @@ zombisalta.webp::CompressedTexture2D::8924236417883326256::1710060060::171006006
 ::res://Characters/NPC/Zombies/Jump_Zombie/::1710075863
 zombisalta (1).webp::CompressedTexture2D::4494533342470042700::1710060060::1710060060::1::::<><>::
 ::res://Characters/Playable characters/::1710075863
-::res://Characters/Playable characters/Ruqi/::1717366256
+::res://Characters/Playable characters/Ruqi/::1718047277
 Camera2D.gd::GDScript::-1::1710060060::0::1::::<>Camera2D<>::
 crouching.tres::RectangleShape2D::223744088813469463::1710060060::0::1::::<><>::
 oldRuqiScript.gd::GDScript::-1::1716418216::0::1::::ePlayer<>CharacterBody2D<>::
 pixil-frame-0.png::CompressedTexture2D::3936837789704627939::1710060060::1710075299::1::::<><>::
-Ruqi.gd::GDScript::-1::1715465944::0::1::::Player<>CharacterBody2D<>::
-ruqi.tscn::PackedScene::201350653458506371::1717366256::0::1::::<><>::res://Characters/Playable characters/Ruqi/Ruqi.gd<>uid://d01pyr8je3xa8::::res://Characters/Playable characters/Ruqi/standing.tres<>uid://bwdbe4tal3jk2::::res://Characters/Playable characters/Ruqi/pixil-frame-0.png
+Ruqi.gd::GDScript::-1::1718043038::0::1::::Player<>CharacterBody2D<>::
+ruqi.tscn::PackedScene::201350653458506371::1718047277::0::1::::<><>::res://Characters/Playable characters/Ruqi/Ruqi.gd<>uid://d01pyr8je3xa8::::res://Characters/Playable characters/Ruqi/standing.tres<>uid://bwdbe4tal3jk2::::res://Characters/Playable characters/Ruqi/pixil-frame-0.png<>uid://ctoxcqngogiea::::res://Weapons/Knifes/Kitchen Knife/knife.tscn
 standing.tres::RectangleShape2D::8968611521871770877::1710060060::0::1::::<><>::
 ::res://Characters/Playable characters/Ruqi/old/::1710075863
 oldplayercontroller.gd::GDScript::-1::1710060060::0::1::::<>CharacterBody2D<>::
-::res://dontWorryAboutThis/::1717366257
+::res://dontWorryAboutThis/::1717544397
 node_2d.gd::GDScript::-1::1715269453::0::1::::<>Node2D<>::
-node_2d.tscn::PackedScene::4126593876393606424::1717366257::0::1::::<><>::res://dontWorryAboutThis/node_2d.gd<>uid://cohlimiyqkmbq::::res://Tiles/Foreground.tscn<>uid://bo8l856scruyq::::res://OverWorldCMDS/TeleportToNewScene/door_to_new_scene.tscn<>uid://c4shlrtelach::::res://Characters/Playable characters/Ruqi/ruqi.tscn
+node_2d.tscn::PackedScene::4126593876393606424::1717544397::0::1::::<><>::res://dontWorryAboutThis/node_2d.gd<>uid://cohlimiyqkmbq::::res://Tiles/Foreground.tscn<>uid://bo8l856scruyq::::res://OverWorldCMDS/TeleportToNewScene/door_to_new_scene.tscn<>uid://c4shlrtelach::::res://Characters/Playable characters/Ruqi/ruqi.tscn
 ::res://Object/::1711155828
 ::res://Object/Objects/::1710075863
 ::res://Object/Objects/Door/::1710153058
@@ -100,10 +101,10 @@ Door.png::CompressedTexture2D::8480725133851346305::1710060060::1710060060::1:::
 doorCollisionShapeClose.tscn::PackedScene::3785561577030203550::1710153058::0::1::::<><>::
 DoorTEST.gd::GDScript::-1::1710060060::0::1::::<>CharacterBody2D<>::
 DoorTEST.tscn::PackedScene::7014096249378665451::1710153058::0::1::::<><>::uid://ds3eklkxkkee0::::res://Object/Objects/Door/Door.png<>res://Object/Objects/Door/DoorTEST.gd<>uid://hcxrkmq75oia::::res://OverWorldCMDS/Interaction/interactionArea/interactionArea.tscn
-::res://OverWorldCMDS/::1716326803
+::res://OverWorldCMDS/::1718043895
 globalVariables.gd::GDScript::-1::1710060060::0::1::::<>Node<>::
-::res://OverWorldCMDS/Damage/::1716808373
-Damage.gd::GDScript::-1::1716808373::0::1::::Damage<>Node<>::
+::res://OverWorldCMDS/Damage/::1717546311
+Damage.gd::GDScript::-1::1717546311::0::1::::Damage<>Node<>::
 ::res://OverWorldCMDS/Dialogue/::1710764404
 Blocky.ttf::FontFile::686049007460882191::1710060060::1710762501::1::::<><>::
 Crang.ttf::FontFile::5634406684509969516::1710764403::1710764404::1::::<><>::
@@ -118,6 +119,11 @@ interactionManager.tscn::PackedScene::6389327093936343758::1710762500::0::1::::<
 ::res://OverWorldCMDS/Interaction/interactionArea/::1711020233
 interactionArea.gd::GDScript::-1::1710757746::0::1::::InteractionArea<>Area2D<>::
 interactionArea.tscn::PackedScene::496878054846437688::1711020233::0::1::::<><>::res://OverWorldCMDS/Interaction/interactionArea/interactionArea.gd
+::res://OverWorldCMDS/Inventory/::1718047129
+inventory.gd::GDScript::-1::1718047129::0::1::::inventory<>Resource<>::
+inventoryItem.gd::GDScript::-1::1718046061::0::1::::inventoryItem<>Resource<>::
+::res://OverWorldCMDS/Inventory/Items/::1718047285
+kichenKnife.tres::Resource/inventoryItem::129372821415525663::1718047285::0::1::::<><>::res://OverWorldCMDS/Inventory/inventoryItem.gd<>uid://cqfpsx04m0ctd::::res://Weapons/Knifes/Kitchen Knife/PIXEL_ART_KNIFE.webp
 ::res://OverWorldCMDS/Menus/::1710075864
 ::res://OverWorldCMDS/Menus/Main_Menu/::1710075863
 Main_Menu.gd::GDScript::-1::1710060060::0::1::::<>Control<>::
@@ -129,9 +135,9 @@ pause_menu.tscn::PackedScene::1076139710819409998::1710060060::0::1::::<><>::res
 ::res://OverWorldCMDS/Menus/Settings_Menu/::1710075864
 Settings.gd::GDScript::-1::1710060060::0::1::::<>Control<>::
 Settings.tscn::PackedScene::3437825608533835839::1710060060::0::1::::<><>::res://OverWorldCMDS/Menus/Settings_Menu/Settings.gd
-::res://OverWorldCMDS/Menus/Story Mode/::1717366256
+::res://OverWorldCMDS/Menus/Story Mode/::1718043043
 story_mode.gd::GDScript::-1::1710060060::0::1::::<>Control<>::
-story_mode.tscn::PackedScene::5092337259729545849::1717366256::0::1::::<><>::res://OverWorldCMDS/Menus/Story Mode/story_mode.gd
+story_mode.tscn::PackedScene::5092337259729545849::1718043043::0::1::::<><>::res://OverWorldCMDS/Menus/Story Mode/story_mode.gd
 ::res://OverWorldCMDS/TeleportToNewScene/::1711661625
 DoorManager.gd::GDScript::-1::1711661625::0::1::::<>Node<>::
 door_to_new_scene.gd::GDScript::-1::1710681896::0::1::::Door<>Area2D<>::
@@ -193,10 +199,10 @@ character_body_2d.gd::GDScript::-1::1710060060::0::1::::<>CharacterBody2D<>::
 Player.tscn::PackedScene::761903979221618729::1710060060::0::1::::<><>::uid://t74vldtoni2f::::res://Tests/Test world/Characters/Animation frog/1téléchargement.jpg<>res://Tests/Chracyter test/PLayer/character_body_2d.gd<>uid://cg5ooh4grdt25::::res://Tests/Test world/Tests/Objects/Gun/gun.tscn
 ::res://Tests/Objects/::1710075864
 Wall.tscn::PackedScene::6433201895950044121::1710060060::0::1::::<><>::uid://cx5dom8v8ayna::::res://Tests/Test world/Tests/Objects/Tree/1_uHeNiVgcg08hKTAKWZhLkA.jpeg
-::res://Tests/Objects/Gun/::1717366257
+::res://Tests/Objects/Gun/::1717616154
 92a.png::CompressedTexture2D::2703668715193336165::1710060060::1710060060::1::::<><>::
 gun.gd::GDScript::-1::1716581501::0::1::::<>Area2D<>::
-gun.tscn::PackedScene::5256781213607838888::1717366257::0::1::::<><>::uid://berxa8hewdn46::::res://Tests/Test world/Tests/Objects/Gun/92a.png<>res://Tests/Objects/Gun/gun.gd
+gun.tscn::PackedScene::5256781213607838888::1717616154::0::1::::<><>::uid://berxa8hewdn46::::res://Tests/Test world/Tests/Objects/Gun/92a.png<>res://Tests/Objects/Gun/gun.gd
 ::res://Tests/Objects/Tree/::1710075864
 1_uHeNiVgcg08hKTAKWZhLkA.jpeg::CompressedTexture2D::6449323938032726794::1710060060::1710060060::1::::<><>::
 object.tscn::PackedScene::7253633581836962278::1710060060::0::1::::<><>::uid://cx5dom8v8ayna::::res://Tests/Test world/Tests/Objects/Tree/1_uHeNiVgcg08hKTAKWZhLkA.jpeg
@@ -213,9 +219,9 @@ icon.svg::CompressedTexture2D::3461408215310631084::1710060060::1710075299::1:::
 6téléchargement.jpg::CompressedTexture2D::5478296877002961073::1710060060::1710060060::1::::<><>::
 7téléchargement.jpg::CompressedTexture2D::2952279785014130691::1710060060::1710060060::1::::<><>::
 téléchargement.jpg::CompressedTexture2D::4945102317284611930::1710060060::1710060060::1::::<><>::
-::res://Tests/Test world/Scenes/::1710075867
+::res://Tests/Test world/Scenes/::1717632848
 tiles.tscn::PackedScene::2079654217959063093::1710060060::0::1::::<><>::uid://dq2mivnj54io6::::res://Tilename.png
-world.tscn::PackedScene::4077016872291172755::1710060060::0::1::::<><>::uid://botp8m0ikyqwc::::res://Tests/Test world/Tiles/green chill zone - 8x8 split sample.png<>uid://nggakrgxuexi::::res://Tests/Test world/Tiles/green chill zone - 8x8 screenshot summer.png<>uid://8da1ex45mbm3::::res://Tests/Test world/Tiles/green chill zone - 8x8 SPRING.png<>res://Tests/Test world/Scripts/testing_BALLS.gd<>uid://ccppd3iwt1fag::::res://Tests/Test world/Characters/Animation frog/téléchargement.jpg
+world.tscn::PackedScene::4077016872291172755::1717632848::0::1::::<><>::uid://botp8m0ikyqwc::::res://Tiles/PNG/green chill zone - 8x8 split sample.png<>uid://nggakrgxuexi::::res://Tests/Test world/Tiles/green chill zone - 8x8 screenshot summer.png<>uid://8da1ex45mbm3::::res://Tiles/PNG/green chill zone - 8x8 SPRING.png<>res://Tests/Test world/Scripts/testing_BALLS.gd<>uid://ccppd3iwt1fag::::res://Tests/Test world/Characters/Animation frog/téléchargement.jpg
 ::res://Tests/Test world/Scripts/::1710075867
 Frog.gd::GDScript::-1::1710060060::0::1::::<>AnimatedSprite2D<>::
 Function Library.txt::TextFile::-1::1710060060::0::1::::<><>::
@@ -228,15 +234,15 @@ testing_script.gd::GDScript::-1::1710060060::0::1::::<>Node<>::
 0_Qozi7vWmqGSmly9P.jpg::CompressedTexture2D::5735252879336630375::1710060060::1710060060::1::::<><>::
 mobby.gd::GDScript::-1::1710060060::0::1::::<>CharacterBody2D<>::
 mobby.tscn::PackedScene::7243953337137746395::1710060060::0::1::::<><>::res://Tests/Test world/Tests/Chracyter test/Enemy/mobby.gd<>uid://cnyg1og5bid7l::::res://Tests/Test world/Tests/Chracyter test/Enemy/0_Qozi7vWmqGSmly9P.jpg
-::res://Tests/Test world/Tests/Chracyter test/PLayer/::1710075867
+::res://Tests/Test world/Tests/Chracyter test/PLayer/::1717632849
 92a.png::CompressedTexture2D::2100807263898215892::1710060060::1710060060::1::::<><>::
 character_body_2d.gd::GDScript::-1::1710060060::0::1::::<>CharacterBody2D<>::
-Player.tscn::PackedScene::761903979221618729::1710060060::0::1::::<><>::uid://t74vldtoni2f::::res://Tests/Test world/Characters/Animation frog/1téléchargement.jpg<>res://Tests/Test world/Tests/Chracyter test/PLayer/character_body_2d.gd<>uid://cg5ooh4grdt25::::res://Tests/Test world/Tests/Objects/Gun/gun.tscn
+Player.tscn::PackedScene::761903979221618729::1717632849::0::1::::<><>::uid://t74vldtoni2f::::res://Tests/Test world/Characters/Animation frog/1téléchargement.jpg<>res://Tests/Test world/Tests/Chracyter test/PLayer/character_body_2d.gd<>uid://cg5ooh4grdt25::::res://Tests/Test world/Tests/Objects/Gun/gun.tscn
 ::res://Tests/Test world/Tests/Objects/::1710075868
-::res://Tests/Test world/Tests/Objects/Gun/::1710075867
+::res://Tests/Test world/Tests/Objects/Gun/::1718043044
 92a.png::CompressedTexture2D::2703668715193336165::1710060060::1710060060::1::::<><>::
 gun.gd::GDScript::-1::1710060060::0::1::::<>Area2D<>::
-gun.tscn::PackedScene::5256781213607838888::1710060060::0::1::::<><>::uid://berxa8hewdn46::::res://Tests/Test world/Tests/Objects/Gun/92a.png<>res://Tests/Test world/Tests/Objects/Gun/gun.gd
+gun.tscn::PackedScene::5256781213607838888::1718043044::0::1::::<><>::uid://berxa8hewdn46::::res://Tests/Test world/Tests/Objects/Gun/92a.png<>res://Tests/Test world/Tests/Objects/Gun/gun.gd
 ::res://Tests/Test world/Tests/Objects/Gun/Bullet/::1710075867
 1916ed.jpg::CompressedTexture2D::2029270628082562306::1710060060::1710060060::1::::<><>::
 bullet.gd::GDScript::-1::1710060060::0::1::::<>Area2D<>::
@@ -288,28 +294,28 @@ Tileset_13.png::CompressedTexture2D::1357769151304339188::1710060060::1710060060
 Tileset_14.png::CompressedTexture2D::851811481170347032::1710060060::1710060060::1::::<><>::
 ::res://Weapons/::1716581353
 ::res://Weapons/Guns/::1710075868
-::res://Weapons/Guns/MAC-50/::1717368066
+::res://Weapons/Guns/MAC-50/::1718043044
 MAC-50 spritesheet.png::CompressedTexture2D::4666659780544147634::1710060060::1710060060::1::::<><>::
 mac_50.gd::GDScript::-1::1716808131::0::1::::<>Area2D<>::
-mac_50.tscn::PackedScene::8879824134964489929::1717368066::0::1::::<><>::uid://b7qtg7yui4kqc::::res://Weapons/Guns/MAC-50/MAC-50 spritesheet.png<>res://Weapons/Guns/MAC-50/mac_50.gd
-::res://Weapons/Guns/MAC-50/MAC-50 Bullet/::1717368066
+mac_50.tscn::PackedScene::8879824134964489929::1718043044::0::1::::<><>::uid://b7qtg7yui4kqc::::res://Weapons/Guns/MAC-50/MAC-50 spritesheet.png<>res://Weapons/Guns/MAC-50/mac_50.gd
+::res://Weapons/Guns/MAC-50/MAC-50 Bullet/::1718043044
 Bullet MAC-50.png::CompressedTexture2D::1694155781500229112::1710060060::1710060060::1::::<><>::
-MAC-50Bullet.tscn::PackedScene::5696165606030205539::1717366256::0::1::::<><>::res://Weapons/Guns/MAC-50/MAC-50 Bullet/Mac-50_Bullet.gd<>uid://yewq66llpbx5::::res://Weapons/Guns/MAC-50/MAC-50 Bullet/Bullet MAC-50.png
-Mac-50_Bullet.gd::GDScript::-1::1717368066::0::1::::<>Area2D<>::
-::res://Weapons/Knifes/::1716581366
-::res://Weapons/Knifes/Kitchen Knife/::1717368066
-Knife.gd::GDScript::-1::1717368066::0::1::::<>Node2D<>::
-knife.tscn::PackedScene::6136731608234718904::1717366257::0::1::::<><>::uid://cqfpsx04m0ctd::::res://Weapons/Knifes/Kitchen Knife/PIXEL_ART_KNIFE.webp<>res://Weapons/Knifes/Kitchen Knife/Knife.gd
+MAC-50Bullet.tscn::PackedScene::5696165606030205539::1718043044::0::1::::<><>::res://Weapons/Guns/MAC-50/MAC-50 Bullet/Mac-50_Bullet.gd<>uid://yewq66llpbx5::::res://Weapons/Guns/MAC-50/MAC-50 Bullet/Bullet MAC-50.png
+Mac-50_Bullet.gd::GDScript::-1::1717945283::0::1::::<>Area2D<>::
+::res://Weapons/Knifes/::1717617469
+::res://Weapons/Knifes/Kitchen Knife/::1718043044
+Knife.gd::GDScript::-1::1717944985::0::1::::<>Node2D<>::
+knife.tscn::PackedScene::6136731608234718904::1718043044::0::1::::<><>::uid://cqfpsx04m0ctd::::res://Weapons/Knifes/Kitchen Knife/PIXEL_ART_KNIFE.webp<>res://Weapons/Knifes/Kitchen Knife/Knife.gd
 PIXEL_ART_KNIFE.webp::CompressedTexture2D::5907128901538616825::1716718892::1716718933::1::::<><>::
 ::res://World scenes/::1710075868
 ::res://World scenes/World 1 scenes/::1710075868
 ::res://World scenes/World 1 scenes/Level 1/::1711573755
 level1.dialogue::Resource::3517642363499685889::1710892936::1711573755::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
-::res://World scenes/World 1 scenes/Level 1/Part1 InsideHouse/::1717366257
-level_1_solo.tscn::PackedScene::4696328011190306709::1717366256::0::1::::<><>::uid://cohlimiyqkmbq::::res://Tiles/Foreground.tscn<>uid://c4shlrtelach::::res://Characters/Playable characters/Ruqi/ruqi.tscn<>uid://dpl5fyel3lwv0::::res://Tiles/background.tscn<>uid://ctoxcqngogiea::::res://Weapons/Knifes/Kitchen Knife/knife.tscn
-lvl_1_scene_2.tscn::PackedScene::7437762463564507021::1717366257::0::1::::<><>::uid://b7563owddjja0::::res://World scenes/World 1 scenes/Level 1/Part1 InsideHouse/level_1_solo.tscn
-::res://World scenes/World 1 scenes/Level 1/Part3 Outside/::1717366257
-outside_apartment.tscn::PackedScene::4671528041023451851::1717366257::0::1::::<><>::uid://cohlimiyqkmbq::::res://Tiles/Foreground.tscn<>uid://c4shlrtelach::::res://Characters/Playable characters/Ruqi/ruqi.tscn
-::res://World scenes/World 1 scenes/Level 1/Part 2 InStairways/::1717366257
+::res://World scenes/World 1 scenes/Level 1/Part1 InsideHouse/::1718043044
+level_1_solo.tscn::PackedScene::4696328011190306709::1718043043::0::1::::<><>::uid://cohlimiyqkmbq::::res://Tiles/Foreground.tscn<>uid://c4shlrtelach::::res://Characters/Playable characters/Ruqi/ruqi.tscn<>uid://dpl5fyel3lwv0::::res://Tiles/background.tscn
+lvl_1_scene_2.tscn::PackedScene::7437762463564507021::1718043044::0::1::::<><>::uid://b7563owddjja0::::res://World scenes/World 1 scenes/Level 1/Part1 InsideHouse/level_1_solo.tscn
+::res://World scenes/World 1 scenes/Level 1/Part3 Outside/::1717544396
+outside_apartment.tscn::PackedScene::4671528041023451851::1717544396::0::1::::<><>::uid://cohlimiyqkmbq::::res://Tiles/Foreground.tscn<>uid://c4shlrtelach::::res://Characters/Playable characters/Ruqi/ruqi.tscn
+::res://World scenes/World 1 scenes/Level 1/Part 2 InStairways/::1718043044
 lev_5.png::CompressedTexture2D::5837575248602168099::1712572124::1712572125::1::::<><>::
-Stairway.tscn::PackedScene::6381889833992715465::1717366257::0::1::::<><>::uid://cohlimiyqkmbq::::res://Tiles/Foreground.tscn<>uid://c4shlrtelach::::res://Characters/Playable characters/Ruqi/ruqi.tscn<>uid://cpf1anit3ov68::::res://World scenes/World 1 scenes/Level 1/Part 2 InStairways/lev_5.png
+Stairway.tscn::PackedScene::6381889833992715465::1718043044::0::1::::<><>::uid://cohlimiyqkmbq::::res://Tiles/Foreground.tscn<>uid://c4shlrtelach::::res://Characters/Playable characters/Ruqi/ruqi.tscn<>uid://cpf1anit3ov68::::res://World scenes/World 1 scenes/Level 1/Part 2 InStairways/lev_5.png

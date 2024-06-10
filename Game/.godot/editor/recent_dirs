@@ -1,11 +1,13 @@
+res://OverWorldCMDS/Inventory
+res://OverWorldCMDS/Inventory/Items
 res://Weapons/Knifes/Kitchen Knife
+res://
 C:/Users/nagad/Downloads/Retro-Reckoning/Game/Tests/Test world/Tests/Chracyter test/Enemy
 C:/Users/nagad/Downloads/Retro-Reckoning/Game/Weapons/Guns/MAC-50/MAC-50 Bullet
 res://OverWorldCMDS/Damage
 res://OverWorldCMDS/TeleportToNewScene/FadingEffect
 res://World scenes/World 1 scenes/Level 1/Part3 Outside
 res://OverWorldCMDS/Dialogue/DialogueArea
-res://
 res://Object/Objects/Door
 res://Tiles
 res://Weapons/Guns/MAC-50
@@ -18,4 +20,3 @@ res://Tests/Objects/Gun
 res://Tests/Chracyter test/Enemy
 res://Tests/World scenes
 res://Tests
-res://Tests/Chracyter test

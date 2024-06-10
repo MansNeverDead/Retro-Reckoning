@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="inventoryItem" load_steps=3 format=3 uid="uid://b3w0sxwsw3kl"]
+
+[ext_resource type="Script" path="res://OverWorldCMDS/Inventory/inventoryItem.gd" id="1_d12ja"]
+[ext_resource type="Texture2D" uid="uid://cqfpsx04m0ctd" path="res://Weapons/Knifes/Kitchen Knife/PIXEL_ART_KNIFE.webp" id="2_jgiqf"]
+
+[resource]
+script = ExtResource("1_d12ja")
+item = "Knife"
+texture = ExtResource("2_jgiqf")

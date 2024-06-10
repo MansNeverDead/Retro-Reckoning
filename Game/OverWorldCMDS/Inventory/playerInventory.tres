@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="inventory" load_steps=3 format=3 uid="uid://b6oe75dsmhhkd"]
+
+[ext_resource type="Resource" uid="uid://b3w0sxwsw3kl" path="res://OverWorldCMDS/Inventory/Items/kichenKnife.tres" id="1_wqq1f"]
+[ext_resource type="Script" path="res://OverWorldCMDS/Inventory/inventory.gd" id="2_1g7dp"]
+
+[resource]
+script = ExtResource("2_1g7dp")
+items = Array[Resource("res://OverWorldCMDS/Inventory/inventoryItem.gd")]([ExtResource("1_wqq1f"), ExtResource("1_wqq1f")])

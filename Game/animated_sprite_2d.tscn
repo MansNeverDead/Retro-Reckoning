@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cad6x7u852oot"]
+
+[ext_resource type="Texture2D" uid="uid://cnyg1og5bid7l" path="res://Tests/Test world/Tests/Chracyter test/Enemy/0_Qozi7vWmqGSmly9P.jpg" id="1_s3gwk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g1p1b"]
+size = Vector2(621, 322)
+
+[node name="AnimatedSprite2D" type="CharacterBody2D"]
+light_mask = 17
+visibility_layer = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(300.5, 151)
+shape = SubResource("RectangleShape2D_g1p1b")
+
+[node name="0Qozi7vWmqGSmly9p" type="Sprite2D" parent="."]
+position = Vector2(308, 155)
+texture = ExtResource("1_s3gwk")
