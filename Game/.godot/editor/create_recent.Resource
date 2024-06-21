@@ -1,3 +1,4 @@
-inventory
 inventoryItem
 Resource
+Item
+inventory

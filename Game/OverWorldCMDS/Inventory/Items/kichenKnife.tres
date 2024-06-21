@@ -5,5 +5,6 @@
 
 [resource]
 script = ExtResource("1_d12ja")
-item = "Knife"
+item = "Kitchen Knife"
 texture = ExtResource("2_jgiqf")
+Path = "res://Weapons/Knifes/Kitchen Knife/knife.tscn"

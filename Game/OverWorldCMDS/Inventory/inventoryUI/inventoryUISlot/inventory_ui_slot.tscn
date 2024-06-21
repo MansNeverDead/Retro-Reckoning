@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhss2c4y1ikyd"]
+
+[ext_resource type="Script" path="res://OverWorldCMDS/Inventory/inventoryUI/inventoryUISlot/inventory_ui_slot.gd" id="1_1kog1"]
+[ext_resource type="FontFile" uid="uid://benn87nj72ej1" path="res://OverWorldCMDS/Dialogue/Normal.ttf" id="2_84413"]
+
+[node name="inventoryUiSlot" type="Panel"]
+custom_minimum_size = Vector2(40, 40)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1112.0
+offset_bottom = -608.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1kog1")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.556863, 0.729412, 0.235294, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="itemDisplay" type="Sprite2D" parent="CenterContainer/Panel"]
+
+[node name="Label" type="Label" parent="CenterContainer/Panel"]
+layout_mode = 0
+offset_top = 10.0
+offset_right = 19.0
+offset_bottom = 24.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_84413")
+horizontal_alignment = 2
+vertical_alignment = 2

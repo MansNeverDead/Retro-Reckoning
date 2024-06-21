@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="inventoryItem" load_steps=3 format=3 uid="uid://dwuoeyfgjnd7a"]
+
+[ext_resource type="Script" path="res://OverWorldCMDS/Inventory/inventoryItem.gd" id="1_cgvxr"]
+[ext_resource type="Texture2D" uid="uid://o3t7atbbygpd" path="res://Weapons/Guns/MAC-50/MAC-50.png" id="1_t22b8"]
+
+[resource]
+script = ExtResource("1_cgvxr")
+item = "MAC-50"
+texture = ExtResource("1_t22b8")
+Path = "res://Weapons/Guns/MAC-50/MAC-50.tscn"

@@ -2,102 +2,123 @@
 
 [ext_resource type="Script" path="res://Characters/Playable characters/Ruqi/Ruqi.gd" id="1_tuxsu"]
 [ext_resource type="Resource" uid="uid://b6oe75dsmhhkd" path="res://OverWorldCMDS/Inventory/playerInventory.tres" id="2_073g0"]
-[ext_resource type="Shape2D" uid="uid://d01pyr8je3xa8" path="res://Characters/Playable characters/Ruqi/standing.tres" id="3_e6h07"]
-[ext_resource type="Texture2D" uid="uid://bwdbe4tal3jk2" path="res://Characters/Playable characters/Ruqi/pixil-frame-0.png" id="3_g7w2m"]
-[ext_resource type="PackedScene" uid="uid://ctoxcqngogiea" path="res://Weapons/Knifes/Kitchen Knife/knife.tscn" id="4_onyke"]
+[ext_resource type="Texture2D" uid="uid://76amqgg4eksn" path="res://Characters/Playable characters/Ruqi/Untitled144_20240618141438.png" id="5_xci0j"]
+[ext_resource type="PackedScene" uid="uid://cdovud5xoqkk8" path="res://OverWorldCMDS/Inventory/inventoryUI/inverntory_ui.tscn" id="6_hlu4k"]
 
-[sub_resource type="Animation" id="Animation_y2b3y"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sxmks"]
+size = Vector2(54.2695, 14.912)
+
+[sub_resource type="Animation" id="Animation_nlo8l"]
+resource_name = "standing"
+length = 0.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerSprite2:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_hxpj1"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("weapon:rotation")
+tracks/0/path = NodePath("PlayerSprite2:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("weapon:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
+"update": 1,
+"values": [1]
 }
 
-[sub_resource type="Animation" id="Animation_wr33t"]
-resource_name = "attackLeft"
-length = 0.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("weapon:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(0, 0), Vector2(3, 0), Vector2(-1, 0), Vector2(-7, 0), Vector2(-10, 0), Vector2(0, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_m30fs"]
-resource_name = "attackRight"
-length = 0.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("weapon:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
-"update": 0,
-"values": []
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("weapon:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(-5, 0), Vector2(-9, 0), Vector2(-5, 0), Vector2(-2.095, 0), Vector2(3.6, 0), Vector2(0, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_ge80h"]
-resource_name = "crouch_walk"
-
-[sub_resource type="Animation" id="Animation_x5xo2"]
-resource_name = "crouching"
+[sub_resource type="Animation" id="Animation_gsxv8"]
+resource_name = "moveUp"
+length = 0.3
 loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerSprite2:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [9, 10, 11]
+}
 
-[sub_resource type="Animation" id="Animation_nlo8l"]
-resource_name = "standing"
+[sub_resource type="Animation" id="Animation_5gi12"]
+resource_name = "moveRight"
+length = 0.3
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerSprite2:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [6, 7, 8]
+}
+
+[sub_resource type="Animation" id="Animation_bflq7"]
+resource_name = "moveLeft"
+length = 0.3
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerSprite2:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [3, 4, 5]
+}
+
+[sub_resource type="Animation" id="Animation_ngq78"]
+resource_name = "moveDown"
+length = 0.3
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerSprite2:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_mn2kj"]
 _data = {
-"RESET": SubResource("Animation_y2b3y"),
-"attackLeft": SubResource("Animation_wr33t"),
-"attackRight": SubResource("Animation_m30fs"),
-"crouch_walk": SubResource("Animation_ge80h"),
-"crouching": SubResource("Animation_x5xo2"),
+"RESET": SubResource("Animation_hxpj1"),
+"moveDown": SubResource("Animation_ngq78"),
+"moveLeft": SubResource("Animation_bflq7"),
+"moveRight": SubResource("Animation_5gi12"),
+"moveUp": SubResource("Animation_gsxv8"),
 "standing": SubResource("Animation_nlo8l")
 }
 
-[node name="Ruqi" type="CharacterBody2D" groups=["player"]]
+[node name="Ruqi" type="CharacterBody2D"]
 editor_description = "Layer determines what  can detect me
 
 mask determine what i can detect"
@@ -108,24 +129,39 @@ script = ExtResource("1_tuxsu")
 Inv = ExtResource("2_073g0")
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 0)
-rotation = 1.57857
+position = Vector2(3.72691, -0.718107)
+rotation = 1.5708
 scale = Vector2(1.86912, 2.85316)
-shape = ExtResource("3_e6h07")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(1, 0)
-position_smoothing_enabled = true
+shape = SubResource("RectangleShape2D_sxmks")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_mn2kj")
 }
+autoplay = "standing"
 
-[node name="PlayerSprite" type="Sprite2D" parent="."]
+[node name="inverntoryUI" parent="." instance=ExtResource("6_hlu4k")]
+offset_left = -63.0
+offset_top = -108.0
+offset_right = 67.0
+offset_bottom = -65.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+scale = Vector2(2.65388, 0.906469)
+zoom = Vector2(1.8, 1.8)
+position_smoothing_enabled = true
+
+[node name="PlayerSprite2" type="Sprite2D" parent="."]
 texture_filter = 1
-texture = ExtResource("3_g7w2m")
+position = Vector2(1.43051e-06, 20)
+scale = Vector2(0.259911, 0.259911)
+texture = ExtResource("5_xci0j")
+offset = Vector2(0, -80.7277)
+hframes = 3
+vframes = 4
+frame = 1
 
-[node name="weapon" type="Node2D" parent="."]
+[node name="weaponSpawn" type="Marker2D" parent="."]
+position = Vector2(4, 9)
 
-[node name="Kitchen Knife" parent="weapon" instance=ExtResource("4_onyke")]
+[connection signal="done" from="inverntoryUI" to="." method="inventoryUiDone"]

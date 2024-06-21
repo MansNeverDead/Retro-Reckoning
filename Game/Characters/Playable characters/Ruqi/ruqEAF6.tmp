@@ -1,0 +1,77 @@
+[gd_scene load_steps=13 format=3 uid="uid://c4shlrtelach"]
+
+[ext_resource type="Script" path="res://Characters/Playable characters/Ruqi/Ruqi.gd" id="1_tuxsu"]
+[ext_resource type="Resource" uid="uid://b6oe75dsmhhkd" path="res://OverWorldCMDS/Inventory/playerInventory.tres" id="2_073g0"]
+[ext_resource type="Shape2D" uid="uid://d01pyr8je3xa8" path="res://Characters/Playable characters/Ruqi/standing.tres" id="3_e6h07"]
+[ext_resource type="Texture2D" uid="uid://bwdbe4tal3jk2" path="res://Characters/Playable characters/Ruqi/pixil-frame-0.png" id="3_g7w2m"]
+[ext_resource type="PackedScene" uid="uid://cdovud5xoqkk8" path="res://OverWorldCMDS/Inventory/inventoryUI/inverntory_ui.tscn" id="6_hlu4k"]
+
+[sub_resource type="Animation" id="Animation_y2b3y"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_wr33t"]
+resource_name = "attackLeft"
+length = 0.5
+
+[sub_resource type="Animation" id="Animation_m30fs"]
+resource_name = "attackRight"
+length = 0.5
+
+[sub_resource type="Animation" id="Animation_ge80h"]
+resource_name = "crouch_walk"
+
+[sub_resource type="Animation" id="Animation_x5xo2"]
+resource_name = "crouching"
+loop_mode = 1
+
+[sub_resource type="Animation" id="Animation_nlo8l"]
+resource_name = "standing"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mn2kj"]
+_data = {
+"RESET": SubResource("Animation_y2b3y"),
+"attackLeft": SubResource("Animation_wr33t"),
+"attackRight": SubResource("Animation_m30fs"),
+"crouch_walk": SubResource("Animation_ge80h"),
+"crouching": SubResource("Animation_x5xo2"),
+"standing": SubResource("Animation_nlo8l")
+}
+
+[node name="Ruqi" type="CharacterBody2D"]
+editor_description = "Layer determines what  can detect me
+
+mask determine what i can detect"
+position = Vector2(1, -1)
+collision_layer = 34
+collision_mask = 193
+script = ExtResource("1_tuxsu")
+Inv = ExtResource("2_073g0")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+rotation = 1.57857
+scale = Vector2(1.86912, 2.85316)
+shape = ExtResource("3_e6h07")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1, 0)
+position_smoothing_enabled = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_mn2kj")
+}
+
+[node name="PlayerSprite" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("3_g7w2m")
+
+[node name="inverntoryUI" parent="." instance=ExtResource("6_hlu4k")]
+offset_left = -63.0
+offset_top = -108.0
+offset_right = 67.0
+offset_bottom = -65.0
+
+[node name="equipedWeapon" type="Node2D" parent="."]
+
+[connection signal="done" from="inverntoryUI" to="." method="inventoryUiDone"]

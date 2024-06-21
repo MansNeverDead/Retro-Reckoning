@@ -2,20 +2,20 @@ extends Node2D
 
 const attackDamage = 5
 const knockback = 100
-
+var lastLook
 @onready var weapon = $"."
 @onready var animationPlayer = $AnimationPlayer
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var target_position = Vector2.ZERO
-	var target_rotation = 0.0
-	var is_left = false
+	var is_left
 
 	if Input.is_action_pressed("left"):
 		scale.x = -1  # Flip horizontally.
 		target_position = Vector2(-10, 0)
 		is_left = true
-	elif Input.is_action_pressed("right"):
+	
+	if Input.is_action_pressed("right"):
 		target_position = Vector2(10, 0)
 		scale.x = 1  # Flip horizontally
 		is_left = false
@@ -23,11 +23,14 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("Shoot"):
 		if is_left:
 			animationPlayer.play("attackLeft")
-		else:
+		if !is_left:
 			animationPlayer.play("attackRight")
-
+	
+	if is_left:
+		target_position = Vector2(-20, 0)
+	if !is_left:
+		target_position = Vector2(20, 0)
 	weapon.position = target_position
-	weapon.rotation_degrees = target_rotation
 
 func _on_body_entered(body):
 	if body.has_method("takeDamage"):

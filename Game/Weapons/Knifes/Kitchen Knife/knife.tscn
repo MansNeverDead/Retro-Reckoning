@@ -64,22 +64,22 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(23, 1), Vector2(21, 1), Vector2(47, 1), Vector2(44, 1), Vector2(35, 1)]
+"values": [Vector2(23.03, 1), Vector2(16, 1), Vector2(9, 1), Vector2(16, 1)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
-tracks/1/enabled = true
+tracks/1/enabled = false
 tracks/1/path = NodePath("PixelArtKnife:flip_h")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
 "update": 1,
-"values": [true]
+"values": []
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -144,7 +144,7 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o1b6a"]
 size = Vector2(18.1644, 7)
 
-[node name="Kitchen Knife" type="Area2D"]
+[node name="Kitchen Knife" type="Area2D" groups=["Weapons"]]
 position = Vector2(16, 0)
 script = ExtResource("1_mlv3b")
 
@@ -155,12 +155,11 @@ libraries = {
 
 [node name="PixelArtKnife" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(23, 0)
 texture = ExtResource("1_20qil")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
-position = Vector2(29, 2)
+position = Vector2(6, 2)
 shape = SubResource("RectangleShape2D_o1b6a")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

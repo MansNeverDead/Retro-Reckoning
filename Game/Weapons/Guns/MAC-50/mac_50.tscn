@@ -42,7 +42,7 @@ _data = {
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_wy25p"]
 
-[node name="MAC-50" type="Area2D"]
+[node name="MAC-50" type="Area2D" groups=["Guns", "Knifes"]]
 z_index = -3
 script = ExtResource("2_ysqev")
 

@@ -1,0 +1,66 @@
+[gd_scene load_steps=7 format=3 uid="uid://dyrpn2rdjrcaj"]
+
+[ext_resource type="Script" path="res://Weapons/Guns/MAC-50/mac_50.gd" id="1_f6vqv"]
+[ext_resource type="Texture2D" uid="uid://b7qtg7yui4kqc" path="res://Weapons/Guns/MAC-50/MAC-50 spritesheet.png" id="2_pudfo"]
+
+[sub_resource type="Animation" id="Animation_8fbey"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Mac-50Spritesheet:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_rasf5"]
+resource_name = "Shoot"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Mac-50Spritesheet:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0374, 0.078, 0.113, 0.1645, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 0, 1, 2, 3, 4]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wyt4m"]
+_data = {
+"RESET": SubResource("Animation_8fbey"),
+"Shoot": SubResource("Animation_rasf5")
+}
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_wy25p"]
+
+[node name="MAC-50" type="Area2D" groups=["Guns"]]
+position = Vector2(-21, 0)
+script = ExtResource("1_f6vqv")
+
+[node name="Mac-50Spritesheet" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(36, 0)
+texture = ExtResource("2_pudfo")
+hframes = 5
+
+[node name="FirePoint" type="Marker2D" parent="Mac-50Spritesheet"]
+position = Vector2(21, -6)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_wyt4m")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 0
+visibility_layer = 0
+shape = SubResource("SegmentShape2D_wy25p")

@@ -1,9 +1,8 @@
 class_name Player extends CharacterBody2D
 
 @export var Inv: inventory
-@onready var weapon = $weapon
 @onready var animationPlayer = $AnimationPlayer
-@onready var PlayerSprite = $PlayerSprite
+@onready var playerInv: inventory = load("res://OverWorldCMDS/Inventory/playerInventory.tres")
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 const RUN_SPEED = 400.0
@@ -12,31 +11,22 @@ const WALL_SLIDE_GRAVITY = 350
 var can_move = true
 var gravity = 980
 var wallSliding = false
-var lastDirection
+var previousItem: Area2D = null
+
 
 func _physics_process(delta):
-	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta
 	move()
 	jump()
-	
 	wallslide(delta)
-	if Input.is_action_pressed("Shoot"):
-		if lastDirection == 'left':
-			weapon.scale.x = -1
-			animationPlayer.play("attackLeft")
-			weapon.scale.x = 1
-		elif lastDirection == 'right':
-			
-			animationPlayer.play("attackRight")
 	move_and_slide()
+	if Input.is_action_just_pressed("Inventory"):
+		inventoryUiDone()
+	
 
-func _ready():
-	pass
-
-func _on_spawn(position: Vector2, _direction: String):
-	global_position = position
+func _on_spawn(_position: Vector2, _direction: String):
+	global_position = _position
 
 func move():
 	var direction = Input.get_axis("left", "right")
@@ -46,11 +36,11 @@ func move():
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 	if direction == 1:
-		PlayerSprite.flip_h = false
-		lastDirection = "right"
-	if direction == -1:
-		PlayerSprite.flip_h = true
-		lastDirection = "left"
+		animationPlayer.play("moveRight")
+	elif direction == -1:
+		animationPlayer.play("moveLeft")
+	else:
+		animationPlayer.play("standing")
 	if can_move == false:
 		velocity.x = 0
 	
@@ -63,7 +53,7 @@ func jump():
 		if is_on_floor():
 			velocity.y = JUMP_VELOCITY
 			#if is_on_floor():
-				#.play("idle animation")
+			animationPlayer.play("standing")
 		if Input.is_action_pressed("left")  && is_on_wall():
 			velocity.y = JUMP_VELOCITY
 			velocity.x = WALL_JUMP_PUSHBACK
@@ -83,3 +73,31 @@ func wallslide(delta):
 	if wallSliding:
 		velocity.y += (WALL_SLIDE_GRAVITY * delta)
 		velocity.y = min(velocity.y, WALL_SLIDE_GRAVITY)
+
+func equipWeapon():
+	if GlobalVariables.inventoryIndex == 0:
+		equipItem()
+	elif GlobalVariables.inventoryIndex == 1:
+		equipItem()
+	elif GlobalVariables.inventoryIndex == 2:
+		equipItem()
+	else:
+		return
+
+func equipItem():
+	deletePreviousItem()
+	var item_slot = playerInv.slots[GlobalVariables.inventoryIndex]
+	var item = item_slot.item 
+	var itemPath = item.Path
+	var instance = load(itemPath)
+	var cannonFodder = instance.instantiate(PackedScene.GEN_EDIT_STATE_INSTANCE)
+	$"weaponSpawn".add_child(cannonFodder)
+	previousItem = cannonFodder
+
+func deletePreviousItem():
+	if previousItem != null:
+		previousItem.queue_free()
+		previousItem = null
+
+func inventoryUiDone():
+	equipItem()
