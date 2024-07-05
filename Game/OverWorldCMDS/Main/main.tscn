@@ -1,0 +1,31 @@
+[gd_scene load_steps=8 format=3 uid="uid://bt1aap8pj1qbv"]
+
+[ext_resource type="Script" path="res://OverWorldCMDS/Main/main.gd" id="1_g5bps"]
+[ext_resource type="PackedScene" uid="uid://ces1bytpoju4h" path="res://OverWorldCMDS/Main/Story Mode/StoryMode.tscn" id="2_k7p4x"]
+[ext_resource type="PackedScene" uid="uid://dkhlmkeolum2h" path="res://OverWorldCMDS/Main/PauseMenu/PauseMenu.tscn" id="3_2v045"]
+[ext_resource type="PackedScene" uid="uid://bmfe8j4rq1x0y" path="res://OverWorldCMDS/Main/SaveAndLoad/Load Game/LoadGame.tscn" id="4_mjtmj"]
+[ext_resource type="PackedScene" uid="uid://ovi3v616wske" path="res://OverWorldCMDS/Main/Options/Options.tscn" id="5_si3qv"]
+[ext_resource type="PackedScene" uid="uid://dxle4f4vavrk5" path="res://OverWorldCMDS/Main/SaveAndLoad/Save Game/SaveGame.tscn" id="8_o1cir"]
+[ext_resource type="PackedScene" uid="uid://cswbqi5u5lt4e" path="res://OverWorldCMDS/Main/MainMenu/MainMenu.tscn" id="10_p02r2"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_g5bps")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MainMenu" parent="CanvasLayer" instance=ExtResource("10_p02r2")]
+
+[node name="Options" parent="CanvasLayer" instance=ExtResource("5_si3qv")]
+visible = false
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("3_2v045")]
+visible = false
+
+[node name="LoadGame" parent="CanvasLayer" instance=ExtResource("4_mjtmj")]
+visible = false
+
+[node name="SaveGame" parent="CanvasLayer" instance=ExtResource("8_o1cir")]
+visible = false
+
+[node name="Story Mode" parent="CanvasLayer" instance=ExtResource("2_k7p4x")]
+visible = false

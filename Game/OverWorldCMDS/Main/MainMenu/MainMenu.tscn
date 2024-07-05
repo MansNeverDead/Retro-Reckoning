@@ -1,0 +1,196 @@
+[gd_scene load_steps=14 format=3 uid="uid://cswbqi5u5lt4e"]
+
+[ext_resource type="Script" path="res://OverWorldCMDS/Main/MainMenu/MainMenu.gd" id="1_qf6rt"]
+[ext_resource type="Texture2D" uid="uid://c4504rpil7g7n" path="res://OverWorldCMDS/Main/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 8/1.png" id="2_mlhb0"]
+[ext_resource type="Texture2D" uid="uid://bnbrdtlwmqlg4" path="res://OverWorldCMDS/Main/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 8/2.png" id="3_h56pl"]
+[ext_resource type="Texture2D" uid="uid://182t78q6s17e" path="res://OverWorldCMDS/Main/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 8/3.png" id="4_uw345"]
+[ext_resource type="Texture2D" uid="uid://b6axnfv5jp271" path="res://OverWorldCMDS/Main/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 8/4.png" id="5_esc32"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i3s57"]
+bg_color = Color(0.6, 0.6, 0.6, 0.501961)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="Theme" id="Theme_vdivs"]
+Label/styles/normal = SubResource("StyleBoxFlat_i3s57")
+
+[sub_resource type="LabelSettings" id="LabelSettings_b0vt1"]
+font_size = 32
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ppmq7"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kfn64"]
+bg_color = Color(0.776598, 0.446143, 0.853875, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p5rxe"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_er4vd"]
+bg_color = Color(0.776471, 0.447059, 0.854902, 1)
+
+[sub_resource type="Theme" id="Theme_r1pos"]
+Button/styles/disabled = SubResource("StyleBoxFlat_ppmq7")
+Button/styles/focus = SubResource("StyleBoxFlat_kfn64")
+Button/styles/hover = SubResource("StyleBoxFlat_kfn64")
+Button/styles/normal = SubResource("StyleBoxFlat_p5rxe")
+Button/styles/pressed = SubResource("StyleBoxFlat_er4vd")
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+script = ExtResource("1_qf6rt")
+
+[node name="background" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_mlhb0")
+flip_v = true
+
+[node name="TextureRect2" type="TextureRect" parent="background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_h56pl")
+
+[node name="TextureRect3" type="TextureRect" parent="background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_uw345")
+
+[node name="TextureRect4" type="TextureRect" parent="background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_esc32")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="left" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="list" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Control" type="Control" parent="HBoxContainer/list"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Title" type="Label" parent="HBoxContainer/list"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+theme = SubResource("Theme_vdivs")
+text = "Retro Reckoning"
+label_settings = SubResource("LabelSettings_b0vt1")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control2" type="Control" parent="HBoxContainer/list"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NewGame" type="Button" parent="HBoxContainer/list"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_r1pos")
+text = "New Game"
+
+[node name="Control3" type="Control" parent="HBoxContainer/list"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="LoadGame" type="Button" parent="HBoxContainer/list"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_r1pos")
+text = "Load Game"
+
+[node name="Control4" type="Control" parent="HBoxContainer/list"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Options" type="Button" parent="HBoxContainer/list"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_r1pos")
+text = "Options"
+
+[node name="Control5" type="Control" parent="HBoxContainer/list"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Quitgame" type="Button" parent="HBoxContainer/list"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_r1pos")
+text = "Quit"
+
+[node name="Control6" type="Control" parent="HBoxContainer/list"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="right" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="pressed" from="HBoxContainer/list/NewGame" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="HBoxContainer/list/LoadGame" to="." method="_on_load_game_pressed"]
+[connection signal="pressed" from="HBoxContainer/list/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="HBoxContainer/list/Quitgame" to="." method="_on_quit_game_pressed"]

@@ -37,6 +37,6 @@ func update_animation():
 	velocity = velocity.normalized()
 
 	# Move the AnimatedSprite using the velocity and speed
-	position += velocity * speed * get_process_delta_time()
+	$AnimatedSprite.position += velocity * speed * get_process_delta_time()
 # ends here
 

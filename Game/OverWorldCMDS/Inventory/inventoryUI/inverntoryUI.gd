@@ -42,15 +42,15 @@ func changeSlot():
 	if indexSlot == 0:
 		color.color = Color(1, 1, 1)
 		color3.color = Color(0.557, 0.729, 0.235)
-		GlobalVariables.inventoryIndex = 0
+		Main.inventoryIndex = 0
 	elif indexSlot == 1:
 		color2.color = Color(1, 1, 1)
 		color.color = Color(0.557, 0.729, 0.235)
-		GlobalVariables.inventoryIndex = 1
+		Main.inventoryIndex = 1
 	elif indexSlot == 2:
 		color3.color = Color(1, 1, 1)
 		color2.color = Color(0.557, 0.729, 0.235)
-		GlobalVariables.inventoryIndex = 2
+		Main.inventoryIndex = 2
 	done.emit()
 	return color && color2 && color3
 

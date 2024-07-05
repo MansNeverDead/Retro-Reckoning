@@ -1,0 +1,151 @@
+[gd_scene load_steps=9 format=3 uid="uid://dkhlmkeolum2h"]
+
+[ext_resource type="Script" path="res://OverWorldCMDS/Main/PauseMenu/PauseMenu.gd" id="1_8k4ct"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i3s57"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="Theme" id="Theme_vdivs"]
+Label/styles/normal = SubResource("StyleBoxFlat_i3s57")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ppmq7"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kfn64"]
+bg_color = Color(0.776598, 0.446143, 0.853875, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p5rxe"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_er4vd"]
+bg_color = Color(0.776471, 0.447059, 0.854902, 1)
+
+[sub_resource type="Theme" id="Theme_r1pos"]
+Button/styles/disabled = SubResource("StyleBoxFlat_ppmq7")
+Button/styles/focus = SubResource("StyleBoxFlat_kfn64")
+Button/styles/hover = SubResource("StyleBoxFlat_kfn64")
+Button/styles/normal = SubResource("StyleBoxFlat_p5rxe")
+Button/styles/pressed = SubResource("StyleBoxFlat_er4vd")
+
+[node name="PauseMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8k4ct")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.360784, 0.360784, 0.360784, 0.756863)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="left" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="list" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Control" type="Control" parent="HBoxContainer/list"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="levelinfo" type="Label" parent="HBoxContainer/list"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+theme = SubResource("Theme_vdivs")
+text = "level 5
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control2" type="Control" parent="HBoxContainer/list"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Resume" type="Button" parent="HBoxContainer/list"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_r1pos")
+text = "Resume"
+
+[node name="Control3" type="Control" parent="HBoxContainer/list"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Save Game" type="Button" parent="HBoxContainer/list"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_r1pos")
+text = "Save Game
+"
+
+[node name="Control4" type="Control" parent="HBoxContainer/list"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="options" type="Button" parent="HBoxContainer/list"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_r1pos")
+text = "options"
+
+[node name="Control5" type="Control" parent="HBoxContainer/list"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="quit game" type="Button" parent="HBoxContainer/list"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_r1pos")
+text = "quit"
+
+[node name="Control6" type="Control" parent="HBoxContainer/list"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="right" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="pressed" from="HBoxContainer/list/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="HBoxContainer/list/Save Game" to="." method="_on_save_game_pressed"]
+[connection signal="pressed" from="HBoxContainer/list/options" to="." method="_on_options_pressed"]

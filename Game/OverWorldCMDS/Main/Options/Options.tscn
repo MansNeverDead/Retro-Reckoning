@@ -1,0 +1,208 @@
+[gd_scene load_steps=8 format=3 uid="uid://ovi3v616wske"]
+
+[ext_resource type="Script" path="res://OverWorldCMDS/Main/Options/Options.gd" id="1_7uqb0"]
+[ext_resource type="Texture2D" uid="uid://c4504rpil7g7n" path="res://OverWorldCMDS/Main/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 8/1.png" id="2_mhukr"]
+[ext_resource type="Texture2D" uid="uid://bnbrdtlwmqlg4" path="res://OverWorldCMDS/Main/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 8/2.png" id="3_kgxd1"]
+[ext_resource type="Texture2D" uid="uid://182t78q6s17e" path="res://OverWorldCMDS/Main/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 8/3.png" id="4_vo83i"]
+[ext_resource type="Texture2D" uid="uid://b6axnfv5jp271" path="res://OverWorldCMDS/Main/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 8/4.png" id="5_b8f0a"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ccmea"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="Theme" id="Theme_na1k4"]
+Label/styles/normal = SubResource("StyleBoxFlat_ccmea")
+
+[node name="Options" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7uqb0")
+
+[node name="background" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_mhukr")
+flip_v = true
+
+[node name="TextureRect2" type="TextureRect" parent="background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_kgxd1")
+
+[node name="TextureRect3" type="TextureRect" parent="background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_vo83i")
+
+[node name="TextureRect4" type="TextureRect" parent="background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_b8f0a")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+size_flags_vertical = 3
+
+[node name="header" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 8.0
+
+[node name="Control2" type="Control" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 8.0
+
+[node name="Title" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+theme = SubResource("Theme_na1k4")
+text = "Options"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="load_container" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 16.0
+
+[node name="Control" type="Control" parent="VBoxContainer/HBoxContainer/VBoxContainer/load_container"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 8.0
+
+[node name="List" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/VBoxContainer/load_container/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Resolution" type="OptionButton" parent="VBoxContainer/HBoxContainer/VBoxContainer/load_container/Control/List"]
+layout_mode = 2
+size_flags_vertical = 3
+item_count = 3
+selected = 2
+popup/item_0/text = "3840 x 2160"
+popup/item_0/id = 0
+popup/item_1/text = "1920 x 1080"
+popup/item_1/id = 1
+popup/item_2/text = "1920 x 1080"
+popup/item_2/id = 2
+
+[node name="FullScrean" type="CheckButton" parent="VBoxContainer/HBoxContainer/VBoxContainer/load_container/Control/List"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "FullScrean"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/VBoxContainer/load_container/Control/List"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer/load_container/Control/List/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Resolution Scale"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ResolutionScale" type="HSlider" parent="VBoxContainer/HBoxContainer/VBoxContainer/load_container/Control/List/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+size_flags_stretch_ratio = 8.0
+min_value = 10.0
+max_value = 360.0
+step = 10.0
+value = 10.0
+scrollable = false
+
+[node name="VSync" type="CheckButton" parent="VBoxContainer/HBoxContainer/VBoxContainer/load_container/Control/List"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "VSync"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/VBoxContainer/load_container/Control/List"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LimiteFrameRate" type="CheckButton" parent="VBoxContainer/HBoxContainer/VBoxContainer/load_container/Control/List/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+text = "Limite Frame Rate"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer/load_container/Control/List/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "60"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MaxFrameRate" type="HSlider" parent="VBoxContainer/HBoxContainer/VBoxContainer/load_container/Control/List/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+size_flags_stretch_ratio = 6.0
+min_value = 10.0
+max_value = 360.0
+step = 10.0
+value = 10.0
+scrollable = false
+
+[node name="Control3" type="Control" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="footer" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3

@@ -1,4 +1,5 @@
-class_name Player extends CharacterBody2D
+extends CharacterBody2D
+class_name Player 
 
 @export var Inv: inventory
 @onready var animationPlayer = $AnimationPlayer
@@ -75,18 +76,18 @@ func wallslide(delta):
 		velocity.y = min(velocity.y, WALL_SLIDE_GRAVITY)
 
 func equipWeapon():
-	if GlobalVariables.inventoryIndex == 0:
+	if Main.inventoryIndex == 0:
 		equipItem()
-	elif GlobalVariables.inventoryIndex == 1:
+	elif Main.inventoryIndex == 1:
 		equipItem()
-	elif GlobalVariables.inventoryIndex == 2:
+	elif Main.inventoryIndex == 2:
 		equipItem()
 	else:
 		return
 
 func equipItem():
 	deletePreviousItem()
-	var item_slot = playerInv.slots[GlobalVariables.inventoryIndex]
+	var item_slot = playerInv.slots[Main.inventoryIndex]
 	var item = item_slot.item 
 	var itemPath = item.Path
 	var instance = load(itemPath)

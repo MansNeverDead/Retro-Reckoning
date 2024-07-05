@@ -11,4 +11,4 @@ func _process(delta):
 
 func _input(event):
 	if event is InputEventAction:
-		target_distance = center_position.direction_to(get_global_transform()) / 2
+		target_distance = center_position.direction_to(get_global_transform().origin) / 2

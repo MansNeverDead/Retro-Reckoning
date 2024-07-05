@@ -11,7 +11,9 @@ config_version=5
 [application]
 
 config/name="Retro Reckoning"
-run/main_scene="res://OverWorldCMDS/Menus/Main_Menu/main_menu.tscn"
+run/main_scene="res://OverWorldCMDS/Main/main.tscn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="Retro Reckoning"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -19,9 +21,13 @@ config/icon="res://icon.svg"
 
 InteractionManager="*res://OverWorldCMDS/Interaction/interactionManager.tscn"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
-GlobalVariables="*res://OverWorldCMDS/globalVariables.gd"
 DoorManager="*res://OverWorldCMDS/TeleportToNewScene/DoorManager.gd"
 FadingEffect="*res://OverWorldCMDS/TeleportToNewScene/FadingEffect/FadingEffect.tscn"
+Main="*res://OverWorldCMDS/Main/main.gd"
+
+[display]
+
+window/size/resizable=false
 
 [editor_plugins]
 
