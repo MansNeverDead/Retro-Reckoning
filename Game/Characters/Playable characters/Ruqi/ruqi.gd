@@ -1,5 +1,5 @@
-class_name Player extends CharacterBody2D
-
+extends CharacterBody2D
+class_name Player 
 @export var Inv: inventory
 @onready var animationPlayer = $AnimationPlayer
 @onready var playerInv: inventory = load("res://OverWorldCMDS/Inventory/playerInventory.tres")

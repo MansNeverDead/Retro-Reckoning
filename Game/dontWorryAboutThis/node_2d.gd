@@ -11,4 +11,3 @@ func on_level_spawn(destination_tag: String):
 
 func _process(_delta):
 	print_tree_pretty()
-

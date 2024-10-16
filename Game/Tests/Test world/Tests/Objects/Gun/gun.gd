@@ -25,4 +25,3 @@ func shoot():
 	new_bullet.global_rotation = %shooting_point.global_rotation
 	%shooting_point.add_child(new_bullet)
 	
-

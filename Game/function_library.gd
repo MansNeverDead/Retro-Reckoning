@@ -39,4 +39,3 @@ func update_animation():
 	# Move the AnimatedSprite using the velocity and speed
 	position += velocity * speed * get_process_delta_time()
 # ends here
-

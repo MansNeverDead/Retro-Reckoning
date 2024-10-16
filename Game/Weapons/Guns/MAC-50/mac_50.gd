@@ -38,4 +38,3 @@ func rotateGun(_direction):
 	
 	gun.position = target_position
 	gun.rotation_degrees = target_rotation
-
