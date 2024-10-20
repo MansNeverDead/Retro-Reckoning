@@ -1,9 +1,10 @@
-[gd_resource type="Resource" script_class="inventory" load_steps=8 format=3 uid="uid://b6oe75dsmhhkd"]
+[gd_resource type="Resource" script_class="inventory" load_steps=9 format=3 uid="uid://b6oe75dsmhhkd"]
 
 [ext_resource type="Resource" uid="uid://b3w0sxwsw3kl" path="res://OverWorldCMDS/Inventory/Items/kichenKnife.tres" id="1_wqq1f"]
 [ext_resource type="Script" path="res://OverWorldCMDS/Inventory/inventory.gd" id="2_1g7dp"]
 [ext_resource type="Script" path="res://OverWorldCMDS/Inventory/inventorySlot.gd" id="3_npgl0"]
 [ext_resource type="Resource" uid="uid://dwuoeyfgjnd7a" path="res://OverWorldCMDS/Inventory/Items/MAC-50.tres" id="4_s6o1v"]
+[ext_resource type="Resource" uid="uid://dg1io5ghlmsp6" path="res://OverWorldCMDS/Inventory/Items/Hands.tres" id="5_hpjf7"]
 
 [sub_resource type="Resource" id="Resource_7ckec"]
 script = ExtResource("3_npgl0")
@@ -17,6 +18,7 @@ amount = 0
 
 [sub_resource type="Resource" id="Resource_pd5wl"]
 script = ExtResource("3_npgl0")
+item = ExtResource("5_hpjf7")
 amount = 0
 
 [resource]

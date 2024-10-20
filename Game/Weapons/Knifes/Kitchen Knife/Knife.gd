@@ -20,7 +20,7 @@ func _physics_process(_delta):
 		scale.x = 1  # Flip horizontally
 		is_left = false
 	
-	if Input.is_action_just_pressed("Shoot"):
+	if Input.is_action_just_pressed("Attack"):
 		if is_left:
 			animationPlayer.play("attackLeft")
 		if !is_left:

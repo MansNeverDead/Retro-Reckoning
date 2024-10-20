@@ -1,10 +1,12 @@
 [gd_resource type="Resource" script_class="inventoryItem" load_steps=3 format=3 uid="uid://dg1io5ghlmsp6"]
 
 [ext_resource type="Script" path="res://OverWorldCMDS/Inventory/inventoryItem.gd" id="1_chmqw"]
-[ext_resource type="Texture2D" uid="uid://bay0b3mj0wri2" path="res://OverWorldCMDS/Inventory/Items/01.png" id="2_i0h7r"]
+
+[sub_resource type="Resource" id="Resource_e0n4m"]
+metadata/__load_path__ = "res://OverWorldCMDS/Inventory/Items/01.png"
 
 [resource]
 script = ExtResource("1_chmqw")
 item = "Hands"
-texture = ExtResource("2_i0h7r")
+texture = SubResource("Resource_e0n4m")
 Path = "res://Weapons/Melee/hands.tscn"

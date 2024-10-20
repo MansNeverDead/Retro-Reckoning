@@ -7,7 +7,7 @@ var doneShooting: bool = true
 var direction = Input.is_action_pressed("up") or Input.is_action_pressed("left") or Input.is_action_pressed("right")
 
 func _physics_process(_delta):
-	if Input.is_action_just_pressed("Shoot"):
+	if Input.is_action_just_pressed("Attack"):
 		shoot()
 	# Handle input for movement
 	rotateGun(direction)
