@@ -12,18 +12,12 @@ func _process(delta: float) -> void:
 	var direction = Input.get_axis("left", "right")
 	if direction == 1:
 		right = true
-		print(" is true")
 	elif direction == -1:
 		right = false
-		print("is false")
 	
 	if Input.is_action_just_pressed("Attack") && right:
 		animation.play("attackRight")
-		scale.x = 1
-		print("right played")
 	elif Input.is_action_just_pressed("Attack") && !right:
-		print("left played")
-		scale.x = -1
 		animation.play("attackLeft")
 
 func mouvement():

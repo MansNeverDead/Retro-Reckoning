@@ -2,33 +2,27 @@ extends Node2D
 
 const attackDamage = 5
 const knockback = 100
-var lastLook
+var right: bool
 @onready var weapon = $"."
 @onready var animationPlayer = $AnimationPlayer
 
 func _physics_process(_delta):
 	var target_position = Vector2.ZERO
-	var is_left
-
-	if Input.is_action_pressed("left"):
-		scale.x = -1  # Flip horizontally.
-		target_position = Vector2(-10, 0)
-		is_left = true
+	var direction = Input.get_axis("left", "right")
+	if direction == 1:
+		target_position = Vector2(200, 0)
+		scale.x = 1
+		right = true
+	elif direction == -1:
+		scale.x = -1
+		right = false
 	
-	if Input.is_action_pressed("right"):
-		target_position = Vector2(10, 0)
-		scale.x = 1  # Flip horizontally
-		is_left = false
-	
-	if Input.is_action_just_pressed("Attack"):
-		if is_left:
-			animationPlayer.play("attackLeft")
-		if !is_left:
-			animationPlayer.play("attackRight")
-	
-	if is_left:
-		target_position = Vector2(-20, 0)
-	if !is_left:
+	if Input.is_action_just_pressed("Attack") && !right:
+		scale.x = 1
+		animationPlayer.play("attackLeft")
+	elif Input.is_action_just_pressed("Attack") && right:
+		animationPlayer.play("attackRight")
+	if !right:
 		target_position = Vector2(20, 0)
 	weapon.position = target_position
 
@@ -39,7 +33,3 @@ func _on_body_entered(body):
 		attack.knockback = knockback
 		attack.attack_position = global_position
 		body.takeDamage(attack)
-
-func _on_AnimationPlayer_animation_finished(anim_name):
-	if anim_name == "attackLeft" or anim_name == "attackRight":
-		animationPlayer.play("RESET")
