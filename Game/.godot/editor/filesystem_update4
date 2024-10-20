@@ -1,14 +1,12 @@
-res://World scenes/World 1 scenes/Level 1/Part1 InsideHouse/level_1_solo.tscn
+res://Weapons/Knifes/Kitchen Knife/knife.tscn
 res://OverWorldCMDS/Inventory/Items/Hands.tres
 res://OverWorldCMDS/Inventory/playerInventory.tres
-res://Weapons/Melee/hands.gd
-res://Weapons/Guns/MAC-50/mac_50.gd
-res://Weapons/Knifes/Kitchen Knife/Knife.gd
-res://Weapons/Guns/MAC-50/MAC-50.tscn
-res://Weapons/Melee/hands.tscn
 res://Characters/Playable characters/Ruqi/ruqi.tscn
+res://World scenes/World 1 scenes/Level 1/Part1 InsideHouse/level_1_solo.tscn
 res://World scenes/World 1 scenes/Level 1/Part1 InsideHouse/lvl_1_scene_2.tscn
 res://World scenes/World 1 scenes/Level 1/Part 2 InStairways/Stairway.tscn
-res://Weapons/Knifes/Kitchen Knife/knife.tscn
 res://OverWorldCMDS/Inventory/inventoryUI/inverntory_ui.tscn
 res://Characters/Enemies/Normal zombies/character_body_2d.tscn
+res://Weapons/Melee/hands.tscn
+res://Weapons/Guns/MAC-50/MAC-50.tscn
+res://Weapons/Knifes/Kitchen Knife/Knife.gd

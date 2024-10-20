@@ -10,20 +10,22 @@ func _physics_process(_delta):
 	var target_position = Vector2.ZERO
 	var direction = Input.get_axis("left", "right")
 	if direction == 1:
-		target_position = Vector2(200, 0)
 		scale.x = 1
+		self.visible = true
+		target_position = Vector2(20, 0)
 		right = true
 	elif direction == -1:
 		scale.x = -1
+		self.visible = true
+		target_position = Vector2(-20, 0)
 		right = false
 	
+	print(right)
 	if Input.is_action_just_pressed("Attack") && !right:
 		scale.x = 1
 		animationPlayer.play("attackLeft")
 	elif Input.is_action_just_pressed("Attack") && right:
 		animationPlayer.play("attackRight")
-	if !right:
-		target_position = Vector2(20, 0)
 	weapon.position = target_position
 
 func _on_body_entered(body):
