@@ -1,7 +1,7 @@
 extends Node
 
 const houseScene1 = preload("res://World scenes/World 1 scenes/Level 1/Part1 InsideHouse/level_1_solo.tscn")
-const level1Scene2TEST = preload("res://dontWorryAboutThis/node_2d.tscn")
+const level1Scene2TEST = preload("res://Tests/World scenes/game_test.tscn")
 
 var spawn_door_tag
 

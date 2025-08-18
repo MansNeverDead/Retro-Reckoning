@@ -20,7 +20,6 @@ func _physics_process(_delta):
 		target_position = Vector2(-20, 0)
 		right = false
 	
-	print(right)
 	if Input.is_action_just_pressed("Attack") && !right:
 		scale.x = 1
 		animationPlayer.play("attackLeft")

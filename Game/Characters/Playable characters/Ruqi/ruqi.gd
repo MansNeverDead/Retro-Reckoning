@@ -3,6 +3,7 @@ class_name Player
 @export var Inv: inventory
 @onready var animationPlayer = $AnimationPlayer
 @onready var playerInv: inventory = load("res://OverWorldCMDS/Inventory/playerInventory.tres")
+
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 const RUN_SPEED = 400.0
@@ -74,16 +75,6 @@ func wallslide(delta):
 		velocity.y += (WALL_SLIDE_GRAVITY * delta)
 		velocity.y = min(velocity.y, WALL_SLIDE_GRAVITY)
 
-func equipWeapon():
-	if GlobalVariables.inventoryIndex == 0:
-		equipItem()
-	elif GlobalVariables.inventoryIndex == 1:
-		equipItem()
-	elif GlobalVariables.inventoryIndex == 2:
-		equipItem()
-	else:
-		return
-
 func equipItem():
 	deletePreviousItem()
 	var item_slot = playerInv.slots[GlobalVariables.inventoryIndex]
@@ -92,7 +83,16 @@ func equipItem():
 	var instance = load(itemPath)
 	var cannonFodder = instance.instantiate(PackedScene.GEN_EDIT_STATE_INSTANCE)
 	$"weaponSpawn".add_child(cannonFodder)
+	
+	# Update the previousItem variable to the new item
 	previousItem = cannonFodder
+	
+	# Update inventory: replace the equipped item slot
+	if item_slot.amount > 0:
+		item_slot.amount -= 1  # Decrease amount of the item in the slot
+		if item_slot.amount == 0:
+			item_slot.item = null  # Clear the slot if the amount is zero
+
 
 func deletePreviousItem():
 	if previousItem != null:

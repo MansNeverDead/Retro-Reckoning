@@ -1,7 +1,5 @@
 extends Area2D
 
-
-
 # here it checks if it senses if there is anything with a area2d and collisionshape node
 # and creates a vector to see how many enemies there are in range
 func _physics_process(delta):
@@ -19,7 +17,7 @@ func _physics_process(delta):
 # point and than also makes sure that it stays connected on the player
 # and than creates an instance of the pullet as a child of the gun
 func shoot():
-	const BULLET = preload("res://World scenes/Test world/Tests/Objects/Gun/Bullet/bullet.tscn")
+	const BULLET = preload("res://Weapons/Guns/MAC-50/MAC-50 Bullet/MAC-50Bullet.tscn")
 	var new_bullet = BULLET.instantiate()
 	new_bullet.global_position = %shooting_point.global_position
 	new_bullet.global_rotation = %shooting_point.global_rotation
